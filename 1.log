@@ -1,0 +1,3761 @@
+----------------- Options ---------------
+                  A_paths: heiti                         
+                  B_paths: songti                        
+                 CA_paths: heiti-01                      
+                  C_paths: songti-01                     
+               batch_size: 2                             
+                    beta1: 0.9                           
+         black_epoch_freq: 0                             
+                block_num: 2                             
+               block_size: 32                            
+              center_crop: False                         
+          checkpoints_dir: ./checkpoints                 
+            conditional_D: True                          
+           continue_train: False                         
+                    cross: [0, 0, 0, 0, 0, 0]            
+                 dataroot: ../../datasets                
+             dataset_mode: cn_few_fusion                 
+                direction: AtoC                          
+             display_freq: 1000                          
+               display_id: 0                             
+            display_ncols: 5                             
+             display_port: 8097                          
+           display_server: http://localhost              
+          display_winsize: 256                           
+                    epoch: latest                        
+              epoch_count: 1                             
+                 few_size: 10                            
+                 fineSize: 128                           
+                 gan_mode: lsgan                         
+                  gpu_ids: 0                             
+                init_type: xavier                        
+                 input_nc: 3                             
+                  isTrain: True                          	[default: None]
+                lambda_CX: 25                            
+              lambda_CX_B: 0                             
+               lambda_GAN: 1                             
+              lambda_GAN2: 1.0                           
+             lambda_GAN_B: 0                             
+                lambda_L1: 150.0                         
+              lambda_L1_B: 0                             
+              lambda_Ltec: 100                           
+                lambda_kl: 0.01                          
+           lambda_local_D: 0                             
+                 lambda_z: 0.5                           
+                 loadSize: 286                           
+                       lr: 0.0002                        
+           lr_decay_iters: 100                           
+                lr_policy: lambda                        
+         max_dataset_size: inf                           
+                    model: agisnet                       
+                n_samples: 4                             
+                     name: song                          
+                      ndf: 64                            
+                      nef: 64                            
+                  nencode: 4                             
+                     netD: basic_256_multi               
+                    netD2: basic_256_multi               
+                   netD_B: basic_256_multi               
+               netD_local: basic_32                      
+                     netE: resnet_256                    
+                     netG: agisnet                       
+                      ngf: 64                            
+                    niter: 200                           
+              niter_decay: 100                           
+                       nl: relu                          
+                  no_flip: False                         
+                  no_html: False                         
+                     norm: instance                      
+                   num_Ds: 2                             
+                 num_test: 10000                         
+              num_threads: 20                            
+                       nz: 8                             
+                output_nc: 3                             
+                    phase: train                         
+               print_freq: 1000                          
+           resize_or_crop: none                          
+              results_dir: test_result                   
+          save_epoch_freq: 10                            
+         save_latest_freq: 10000                         
+                save_path: test_dse_songti01             
+           serial_batches: False                         
+                   suffix:                               
+         update_html_freq: 4000                          
+                 upsample: basic                         
+            use_attention: False                         
+              use_dropout: False                         
+               use_same_D: False                         
+      use_spectral_norm_D: False                         
+      use_spectral_norm_G: False                         
+            validate_freq: 25                            
+                  verbose: False                         
+                      vgg: D:\aalixiang\comparasion\vgg19-dcbb9e9d.pth
+                 vgg_font: ./models/vgg_font.pth         
+                where_add: all                           
+----------------- End -------------------
+dataset [CnFewFusionDataset] was created
+dataset [CnFewFusionDataset] was created
+#training images = 775
+#training images = 972
+initialize network with xavier
+initialize network with xavier
+model [AGISNetModel] was created
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 52.438 M
+[Network D] Total number of parameters : 3.464 M
+-----------------------------------------------
+End of epoch 1 / 200 	 Time Taken: 10 sec
+10.530766010284424
+learning rate = 0.0002000
+End of epoch 2 / 200 	 Time Taken: 7 sec
+7.754045009613037
+learning rate = 0.0002000
+End of epoch 3 / 200 	 Time Taken: 7 sec
+7.778582811355591
+learning rate = 0.0002000
+End of epoch 4 / 200 	 Time Taken: 7 sec
+7.8113768100738525
+learning rate = 0.0002000
+End of epoch 5 / 200 	 Time Taken: 7 sec
+7.7993059158325195
+learning rate = 0.0002000
+End of epoch 6 / 200 	 Time Taken: 7 sec
+7.793719053268433
+learning rate = 0.0002000
+End of epoch 7 / 200 	 Time Taken: 7 sec
+7.846740007400513
+learning rate = 0.0002000
+End of epoch 8 / 200 	 Time Taken: 7 sec
+7.8298163414001465
+learning rate = 0.0002000
+End of epoch 9 / 200 	 Time Taken: 7 sec
+7.856849670410156
+learning rate = 0.0002000
+End of epoch 10 / 200 	 Time Taken: 7 sec
+7.824907541275024
+learning rate = 0.0002000
+End of epoch 11 / 200 	 Time Taken: 7 sec
+7.869541645050049
+learning rate = 0.0002000
+End of epoch 12 / 200 	 Time Taken: 7 sec
+7.8785223960876465
+learning rate = 0.0002000
+End of epoch 13 / 200 	 Time Taken: 7 sec
+7.897023677825928
+learning rate = 0.0002000
+End of epoch 14 / 200 	 Time Taken: 7 sec
+7.860450744628906
+learning rate = 0.0002000
+End of epoch 15 / 200 	 Time Taken: 7 sec
+7.862853765487671
+learning rate = 0.0002000
+End of epoch 16 / 200 	 Time Taken: 7 sec
+7.865847826004028
+learning rate = 0.0002000
+End of epoch 17 / 200 	 Time Taken: 7 sec
+7.867136478424072
+learning rate = 0.0002000
+End of epoch 18 / 200 	 Time Taken: 7 sec
+7.869676828384399
+learning rate = 0.0002000
+End of epoch 19 / 200 	 Time Taken: 7 sec
+7.879945755004883
+learning rate = 0.0002000
+End of epoch 20 / 200 	 Time Taken: 7 sec
+7.879929065704346
+learning rate = 0.0002000
+End of epoch 21 / 200 	 Time Taken: 7 sec
+7.902483940124512
+learning rate = 0.0002000
+End of epoch 22 / 200 	 Time Taken: 7 sec
+7.897120952606201
+learning rate = 0.0002000
+End of epoch 23 / 200 	 Time Taken: 7 sec
+7.865569114685059
+learning rate = 0.0002000
+End of epoch 24 / 200 	 Time Taken: 7 sec
+7.862990617752075
+learning rate = 0.0002000
+End of epoch 25 / 200 	 Time Taken: 7 sec
+7.909920930862427
+learning rate = 0.0002000
+End of epoch 26 / 200 	 Time Taken: 7 sec
+7.896069288253784
+learning rate = 0.0002000
+End of epoch 27 / 200 	 Time Taken: 7 sec
+7.9117937088012695
+learning rate = 0.0002000
+End of epoch 28 / 200 	 Time Taken: 7 sec
+7.878877639770508
+learning rate = 0.0002000
+End of epoch 29 / 200 	 Time Taken: 7 sec
+7.859058380126953
+learning rate = 0.0002000
+End of epoch 30 / 200 	 Time Taken: 7 sec
+7.8881614208221436
+learning rate = 0.0002000
+End of epoch 31 / 200 	 Time Taken: 7 sec
+7.895662784576416
+learning rate = 0.0002000
+End of epoch 32 / 200 	 Time Taken: 7 sec
+7.860445737838745
+learning rate = 0.0002000
+End of epoch 33 / 200 	 Time Taken: 7 sec
+7.883419513702393
+learning rate = 0.0002000
+End of epoch 34 / 200 	 Time Taken: 7 sec
+7.857998609542847
+learning rate = 0.0002000
+End of epoch 35 / 200 	 Time Taken: 7 sec
+7.8511834144592285
+learning rate = 0.0002000
+End of epoch 36 / 200 	 Time Taken: 7 sec
+7.893725633621216
+learning rate = 0.0002000
+End of epoch 37 / 200 	 Time Taken: 7 sec
+7.877504825592041
+learning rate = 0.0002000
+End of epoch 38 / 200 	 Time Taken: 7 sec
+7.8955912590026855
+learning rate = 0.0002000
+End of epoch 39 / 200 	 Time Taken: 7 sec
+7.872971057891846
+learning rate = 0.0002000
+End of epoch 40 / 200 	 Time Taken: 7 sec
+7.869640827178955
+learning rate = 0.0002000
+End of epoch 41 / 200 	 Time Taken: 7 sec
+7.862706661224365
+learning rate = 0.0002000
+End of epoch 42 / 200 	 Time Taken: 7 sec
+7.870798826217651
+learning rate = 0.0002000
+End of epoch 43 / 200 	 Time Taken: 7 sec
+7.930800437927246
+learning rate = 0.0002000
+End of epoch 44 / 200 	 Time Taken: 7 sec
+7.8782312870025635
+learning rate = 0.0002000
+End of epoch 45 / 200 	 Time Taken: 7 sec
+7.900359153747559
+learning rate = 0.0002000
+End of epoch 46 / 200 	 Time Taken: 7 sec
+7.876043796539307
+learning rate = 0.0002000
+End of epoch 47 / 200 	 Time Taken: 7 sec
+7.8632941246032715
+learning rate = 0.0002000
+End of epoch 48 / 200 	 Time Taken: 7 sec
+7.869604587554932
+learning rate = 0.0002000
+End of epoch 49 / 200 	 Time Taken: 7 sec
+7.904486656188965
+learning rate = 0.0002000
+End of epoch 50 / 200 	 Time Taken: 52 sec
+52.23590278625488
+learning rate = 0.0002000
+End of epoch 51 / 200 	 Time Taken: 7 sec
+7.964114427566528
+learning rate = 0.0002000
+End of epoch 52 / 200 	 Time Taken: 7 sec
+7.844153165817261
+learning rate = 0.0002000
+End of epoch 53 / 200 	 Time Taken: 7 sec
+7.837146997451782
+learning rate = 0.0002000
+End of epoch 54 / 200 	 Time Taken: 7 sec
+7.822330474853516
+learning rate = 0.0002000
+End of epoch 55 / 200 	 Time Taken: 7 sec
+7.817043304443359
+learning rate = 0.0002000
+End of epoch 56 / 200 	 Time Taken: 7 sec
+7.866046905517578
+learning rate = 0.0002000
+End of epoch 57 / 200 	 Time Taken: 7 sec
+7.9126296043396
+learning rate = 0.0002000
+End of epoch 58 / 200 	 Time Taken: 7 sec
+7.860079050064087
+learning rate = 0.0002000
+End of epoch 59 / 200 	 Time Taken: 7 sec
+7.897829532623291
+learning rate = 0.0002000
+End of epoch 60 / 200 	 Time Taken: 7 sec
+7.855279922485352
+learning rate = 0.0002000
+End of epoch 61 / 200 	 Time Taken: 7 sec
+7.901856422424316
+learning rate = 0.0002000
+End of epoch 62 / 200 	 Time Taken: 7 sec
+7.89451003074646
+learning rate = 0.0002000
+End of epoch 63 / 200 	 Time Taken: 7 sec
+7.89846134185791
+learning rate = 0.0002000
+End of epoch 64 / 200 	 Time Taken: 7 sec
+7.859865427017212
+learning rate = 0.0002000
+End of epoch 65 / 200 	 Time Taken: 7 sec
+7.913530588150024
+learning rate = 0.0002000
+End of epoch 66 / 200 	 Time Taken: 7 sec
+7.858285188674927
+learning rate = 0.0002000
+End of epoch 67 / 200 	 Time Taken: 7 sec
+7.886300325393677
+learning rate = 0.0002000
+End of epoch 68 / 200 	 Time Taken: 7 sec
+7.878692626953125
+learning rate = 0.0002000
+End of epoch 69 / 200 	 Time Taken: 7 sec
+7.914360523223877
+learning rate = 0.0002000
+End of epoch 70 / 200 	 Time Taken: 7 sec
+7.9039201736450195
+learning rate = 0.0002000
+End of epoch 71 / 200 	 Time Taken: 7 sec
+7.84628963470459
+learning rate = 0.0002000
+End of epoch 72 / 200 	 Time Taken: 7 sec
+7.870116949081421
+learning rate = 0.0002000
+End of epoch 73 / 200 	 Time Taken: 7 sec
+7.880963325500488
+learning rate = 0.0002000
+End of epoch 74 / 200 	 Time Taken: 7 sec
+7.90004825592041
+learning rate = 0.0002000
+End of epoch 75 / 200 	 Time Taken: 7 sec
+7.881082773208618
+learning rate = 0.0002000
+End of epoch 76 / 200 	 Time Taken: 7 sec
+7.874697923660278
+learning rate = 0.0002000
+End of epoch 77 / 200 	 Time Taken: 7 sec
+7.868861436843872
+learning rate = 0.0002000
+End of epoch 78 / 200 	 Time Taken: 7 sec
+7.913636922836304
+learning rate = 0.0002000
+End of epoch 79 / 200 	 Time Taken: 7 sec
+7.916194200515747
+learning rate = 0.0002000
+End of epoch 80 / 200 	 Time Taken: 7 sec
+7.865081071853638
+learning rate = 0.0002000
+End of epoch 81 / 200 	 Time Taken: 7 sec
+7.865032434463501
+learning rate = 0.0002000
+End of epoch 82 / 200 	 Time Taken: 7 sec
+7.857025384902954
+learning rate = 0.0002000
+End of epoch 83 / 200 	 Time Taken: 7 sec
+7.869824171066284
+learning rate = 0.0002000
+End of epoch 84 / 200 	 Time Taken: 7 sec
+7.89915657043457
+learning rate = 0.0002000
+End of epoch 85 / 200 	 Time Taken: 7 sec
+7.9411656856536865
+learning rate = 0.0002000
+End of epoch 86 / 200 	 Time Taken: 7 sec
+7.865896463394165
+learning rate = 0.0002000
+End of epoch 87 / 200 	 Time Taken: 7 sec
+7.879620552062988
+learning rate = 0.0002000
+End of epoch 88 / 200 	 Time Taken: 7 sec
+7.873922348022461
+learning rate = 0.0002000
+End of epoch 89 / 200 	 Time Taken: 7 sec
+7.884478569030762
+learning rate = 0.0002000
+End of epoch 90 / 200 	 Time Taken: 7 sec
+7.886859893798828
+learning rate = 0.0002000
+End of epoch 91 / 200 	 Time Taken: 7 sec
+7.9047040939331055
+learning rate = 0.0002000
+End of epoch 92 / 200 	 Time Taken: 7 sec
+7.8757593631744385
+learning rate = 0.0002000
+End of epoch 93 / 200 	 Time Taken: 7 sec
+7.882244110107422
+learning rate = 0.0002000
+End of epoch 94 / 200 	 Time Taken: 7 sec
+7.893158912658691
+learning rate = 0.0002000
+End of epoch 95 / 200 	 Time Taken: 7 sec
+7.882600545883179
+learning rate = 0.0002000
+End of epoch 96 / 200 	 Time Taken: 7 sec
+7.853984594345093
+learning rate = 0.0002000
+End of epoch 97 / 200 	 Time Taken: 7 sec
+7.875535488128662
+learning rate = 0.0002000
+End of epoch 98 / 200 	 Time Taken: 7 sec
+7.873722791671753
+learning rate = 0.0002000
+End of epoch 99 / 200 	 Time Taken: 7 sec
+7.865033149719238
+learning rate = 0.0002000
+End of epoch 100 / 200 	 Time Taken: 51 sec
+51.745201110839844
+learning rate = 0.0002000
+End of epoch 101 / 200 	 Time Taken: 7 sec
+7.817042589187622
+learning rate = 0.0002000
+End of epoch 102 / 200 	 Time Taken: 7 sec
+7.871182680130005
+learning rate = 0.0002000
+End of epoch 103 / 200 	 Time Taken: 7 sec
+7.8529345989227295
+learning rate = 0.0002000
+End of epoch 104 / 200 	 Time Taken: 7 sec
+7.858801603317261
+learning rate = 0.0002000
+End of epoch 105 / 200 	 Time Taken: 7 sec
+7.898289918899536
+learning rate = 0.0002000
+End of epoch 106 / 200 	 Time Taken: 7 sec
+7.831358909606934
+learning rate = 0.0002000
+End of epoch 107 / 200 	 Time Taken: 7 sec
+7.929440259933472
+learning rate = 0.0002000
+End of epoch 108 / 200 	 Time Taken: 7 sec
+7.862433433532715
+learning rate = 0.0002000
+End of epoch 109 / 200 	 Time Taken: 7 sec
+7.8691699504852295
+learning rate = 0.0002000
+End of epoch 110 / 200 	 Time Taken: 7 sec
+7.87598729133606
+learning rate = 0.0002000
+End of epoch 111 / 200 	 Time Taken: 7 sec
+7.8724281787872314
+learning rate = 0.0002000
+End of epoch 112 / 200 	 Time Taken: 7 sec
+7.838917016983032
+learning rate = 0.0002000
+End of epoch 113 / 200 	 Time Taken: 7 sec
+7.889928340911865
+learning rate = 0.0002000
+End of epoch 114 / 200 	 Time Taken: 7 sec
+7.861750364303589
+learning rate = 0.0002000
+End of epoch 115 / 200 	 Time Taken: 7 sec
+7.901600122451782
+learning rate = 0.0002000
+End of epoch 116 / 200 	 Time Taken: 7 sec
+7.856476068496704
+learning rate = 0.0002000
+End of epoch 117 / 200 	 Time Taken: 7 sec
+7.866135120391846
+learning rate = 0.0002000
+End of epoch 118 / 200 	 Time Taken: 7 sec
+7.860159635543823
+learning rate = 0.0002000
+End of epoch 119 / 200 	 Time Taken: 7 sec
+7.884575366973877
+learning rate = 0.0002000
+End of epoch 120 / 200 	 Time Taken: 7 sec
+7.882908582687378
+learning rate = 0.0002000
+End of epoch 121 / 200 	 Time Taken: 7 sec
+7.88022518157959
+learning rate = 0.0002000
+End of epoch 122 / 200 	 Time Taken: 7 sec
+7.9086079597473145
+learning rate = 0.0002000
+End of epoch 123 / 200 	 Time Taken: 7 sec
+7.85668420791626
+learning rate = 0.0002000
+End of epoch 124 / 200 	 Time Taken: 7 sec
+7.852123737335205
+learning rate = 0.0002000
+End of epoch 125 / 200 	 Time Taken: 7 sec
+7.87064266204834
+learning rate = 0.0002000
+End of epoch 126 / 200 	 Time Taken: 7 sec
+7.879745721817017
+learning rate = 0.0002000
+End of epoch 127 / 200 	 Time Taken: 7 sec
+7.918214321136475
+learning rate = 0.0002000
+End of epoch 128 / 200 	 Time Taken: 7 sec
+7.859990119934082
+learning rate = 0.0002000
+End of epoch 129 / 200 	 Time Taken: 7 sec
+7.855978488922119
+learning rate = 0.0002000
+End of epoch 130 / 200 	 Time Taken: 7 sec
+7.857428789138794
+learning rate = 0.0002000
+End of epoch 131 / 200 	 Time Taken: 7 sec
+7.9320173263549805
+learning rate = 0.0002000
+End of epoch 132 / 200 	 Time Taken: 7 sec
+7.893621921539307
+learning rate = 0.0002000
+End of epoch 133 / 200 	 Time Taken: 7 sec
+7.921423435211182
+learning rate = 0.0002000
+End of epoch 134 / 200 	 Time Taken: 7 sec
+7.872496128082275
+learning rate = 0.0002000
+End of epoch 135 / 200 	 Time Taken: 7 sec
+7.890531063079834
+learning rate = 0.0002000
+End of epoch 136 / 200 	 Time Taken: 7 sec
+7.926162004470825
+learning rate = 0.0002000
+End of epoch 137 / 200 	 Time Taken: 7 sec
+7.903851270675659
+learning rate = 0.0002000
+End of epoch 138 / 200 	 Time Taken: 7 sec
+7.8938148021698
+learning rate = 0.0002000
+End of epoch 139 / 200 	 Time Taken: 7 sec
+7.882617473602295
+learning rate = 0.0002000
+End of epoch 140 / 200 	 Time Taken: 7 sec
+7.920492887496948
+learning rate = 0.0002000
+End of epoch 141 / 200 	 Time Taken: 7 sec
+7.90013861656189
+learning rate = 0.0002000
+End of epoch 142 / 200 	 Time Taken: 7 sec
+7.8641791343688965
+learning rate = 0.0002000
+End of epoch 143 / 200 	 Time Taken: 7 sec
+7.882072448730469
+learning rate = 0.0002000
+End of epoch 144 / 200 	 Time Taken: 7 sec
+7.87654709815979
+learning rate = 0.0002000
+End of epoch 145 / 200 	 Time Taken: 7 sec
+7.89528489112854
+learning rate = 0.0002000
+End of epoch 146 / 200 	 Time Taken: 7 sec
+7.87229061126709
+learning rate = 0.0002000
+End of epoch 147 / 200 	 Time Taken: 7 sec
+7.882425785064697
+learning rate = 0.0002000
+End of epoch 148 / 200 	 Time Taken: 7 sec
+7.8704376220703125
+learning rate = 0.0002000
+End of epoch 149 / 200 	 Time Taken: 7 sec
+7.902090072631836
+learning rate = 0.0002000
+End of epoch 150 / 200 	 Time Taken: 51 sec
+51.507336139678955
+learning rate = 0.0002000
+End of epoch 151 / 200 	 Time Taken: 7 sec
+7.875038385391235
+learning rate = 0.0001961
+End of epoch 152 / 200 	 Time Taken: 7 sec
+7.869203329086304
+learning rate = 0.0001922
+End of epoch 153 / 200 	 Time Taken: 7 sec
+7.851776838302612
+learning rate = 0.0001882
+End of epoch 154 / 200 	 Time Taken: 7 sec
+7.856791019439697
+learning rate = 0.0001843
+End of epoch 155 / 200 	 Time Taken: 7 sec
+7.856884241104126
+learning rate = 0.0001804
+End of epoch 156 / 200 	 Time Taken: 7 sec
+7.884331941604614
+learning rate = 0.0001765
+End of epoch 157 / 200 	 Time Taken: 7 sec
+7.866742134094238
+learning rate = 0.0001725
+End of epoch 158 / 200 	 Time Taken: 7 sec
+7.879239082336426
+learning rate = 0.0001686
+End of epoch 159 / 200 	 Time Taken: 7 sec
+7.866392135620117
+learning rate = 0.0001647
+End of epoch 160 / 200 	 Time Taken: 7 sec
+7.869697093963623
+learning rate = 0.0001608
+End of epoch 161 / 200 	 Time Taken: 7 sec
+7.848715782165527
+learning rate = 0.0001569
+End of epoch 162 / 200 	 Time Taken: 7 sec
+7.880302429199219
+learning rate = 0.0001529
+End of epoch 163 / 200 	 Time Taken: 7 sec
+7.885220050811768
+learning rate = 0.0001490
+End of epoch 164 / 200 	 Time Taken: 7 sec
+7.88739538192749
+learning rate = 0.0001451
+End of epoch 165 / 200 	 Time Taken: 7 sec
+7.9449028968811035
+learning rate = 0.0001412
+End of epoch 166 / 200 	 Time Taken: 7 sec
+7.86458683013916
+learning rate = 0.0001373
+End of epoch 167 / 200 	 Time Taken: 7 sec
+7.906780481338501
+learning rate = 0.0001333
+End of epoch 168 / 200 	 Time Taken: 7 sec
+7.867647171020508
+learning rate = 0.0001294
+End of epoch 169 / 200 	 Time Taken: 7 sec
+7.874321937561035
+learning rate = 0.0001255
+End of epoch 170 / 200 	 Time Taken: 7 sec
+7.910985469818115
+learning rate = 0.0001216
+End of epoch 171 / 200 	 Time Taken: 7 sec
+7.8843910694122314
+learning rate = 0.0001176
+End of epoch 172 / 200 	 Time Taken: 7 sec
+7.887871503829956
+learning rate = 0.0001137
+End of epoch 173 / 200 	 Time Taken: 7 sec
+7.873577356338501
+learning rate = 0.0001098
+End of epoch 174 / 200 	 Time Taken: 7 sec
+7.847517967224121
+learning rate = 0.0001059
+End of epoch 175 / 200 	 Time Taken: 7 sec
+7.868290662765503
+learning rate = 0.0001020
+End of epoch 176 / 200 	 Time Taken: 7 sec
+7.870303153991699
+learning rate = 0.0000980
+End of epoch 177 / 200 	 Time Taken: 7 sec
+7.881409645080566
+learning rate = 0.0000941
+End of epoch 178 / 200 	 Time Taken: 7 sec
+7.8365397453308105
+learning rate = 0.0000902
+End of epoch 179 / 200 	 Time Taken: 7 sec
+7.8971266746521
+learning rate = 0.0000863
+End of epoch 180 / 200 	 Time Taken: 7 sec
+7.875496864318848
+learning rate = 0.0000824
+End of epoch 181 / 200 	 Time Taken: 7 sec
+7.917100667953491
+learning rate = 0.0000784
+End of epoch 182 / 200 	 Time Taken: 7 sec
+7.906097650527954
+learning rate = 0.0000745
+End of epoch 183 / 200 	 Time Taken: 7 sec
+7.8760762214660645
+learning rate = 0.0000706
+End of epoch 184 / 200 	 Time Taken: 7 sec
+7.8536107540130615
+learning rate = 0.0000667
+End of epoch 185 / 200 	 Time Taken: 7 sec
+7.916303634643555
+learning rate = 0.0000627
+End of epoch 186 / 200 	 Time Taken: 7 sec
+7.870307922363281
+learning rate = 0.0000588
+End of epoch 187 / 200 	 Time Taken: 7 sec
+7.892109632492065
+learning rate = 0.0000549
+End of epoch 188 / 200 	 Time Taken: 7 sec
+7.910661935806274
+learning rate = 0.0000510
+End of epoch 189 / 200 	 Time Taken: 7 sec
+7.89774227142334
+learning rate = 0.0000471
+End of epoch 190 / 200 	 Time Taken: 7 sec
+7.892042398452759
+learning rate = 0.0000431
+End of epoch 191 / 200 	 Time Taken: 7 sec
+7.8761560916900635
+learning rate = 0.0000392
+End of epoch 192 / 200 	 Time Taken: 7 sec
+7.884677410125732
+learning rate = 0.0000353
+End of epoch 193 / 200 	 Time Taken: 7 sec
+7.8497314453125
+learning rate = 0.0000314
+End of epoch 194 / 200 	 Time Taken: 7 sec
+7.89132833480835
+learning rate = 0.0000275
+End of epoch 195 / 200 	 Time Taken: 7 sec
+7.873674154281616
+learning rate = 0.0000235
+End of epoch 196 / 200 	 Time Taken: 7 sec
+7.870634078979492
+learning rate = 0.0000196
+End of epoch 197 / 200 	 Time Taken: 7 sec
+7.862009763717651
+learning rate = 0.0000157
+End of epoch 198 / 200 	 Time Taken: 7 sec
+7.923351526260376
+learning rate = 0.0000118
+End of epoch 199 / 200 	 Time Taken: 7 sec
+7.905623197555542
+learning rate = 0.0000078
+End of epoch 200 / 200 	 Time Taken: 51 sec
+51.572680711746216
+learning rate = 0.0000039
+dataset [CnFewFusionDataset] was created
+dataset [CnFewFusionDataset] was created
+#training images = 775
+#training images = 972
+initialize network with xavier
+initialize network with xavier
+model [AGISNetModel] was created
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 52.438 M
+[Network D] Total number of parameters : 3.464 M
+-----------------------------------------------
+End of epoch 1 / 200 	 Time Taken: 11 sec
+11.666233777999878
+learning rate = 0.0002000
+End of epoch 2 / 200 	 Time Taken: 10 sec
+10.92943525314331
+learning rate = 0.0002000
+End of epoch 3 / 200 	 Time Taken: 10 sec
+10.919676542282104
+learning rate = 0.0002000
+End of epoch 4 / 200 	 Time Taken: 10 sec
+10.964655876159668
+learning rate = 0.0002000
+End of epoch 5 / 200 	 Time Taken: 11 sec
+11.020833492279053
+learning rate = 0.0002000
+End of epoch 6 / 200 	 Time Taken: 11 sec
+11.010070085525513
+learning rate = 0.0002000
+End of epoch 7 / 200 	 Time Taken: 10 sec
+10.997796773910522
+learning rate = 0.0002000
+End of epoch 8 / 200 	 Time Taken: 11 sec
+11.011061429977417
+learning rate = 0.0002000
+End of epoch 9 / 200 	 Time Taken: 10 sec
+10.992386102676392
+learning rate = 0.0002000
+End of epoch 10 / 200 	 Time Taken: 10 sec
+10.99164628982544
+learning rate = 0.0002000
+End of epoch 11 / 200 	 Time Taken: 11 sec
+11.007065296173096
+learning rate = 0.0002000
+End of epoch 12 / 200 	 Time Taken: 10 sec
+10.988686561584473
+learning rate = 0.0002000
+End of epoch 13 / 200 	 Time Taken: 11 sec
+11.004546880722046
+learning rate = 0.0002000
+End of epoch 14 / 200 	 Time Taken: 11 sec
+11.01333999633789
+learning rate = 0.0002000
+End of epoch 15 / 200 	 Time Taken: 10 sec
+10.99638557434082
+learning rate = 0.0002000
+End of epoch 16 / 200 	 Time Taken: 11 sec
+11.006801128387451
+learning rate = 0.0002000
+End of epoch 17 / 200 	 Time Taken: 11 sec
+11.007882118225098
+learning rate = 0.0002000
+End of epoch 18 / 200 	 Time Taken: 10 sec
+10.977289199829102
+learning rate = 0.0002000
+End of epoch 19 / 200 	 Time Taken: 11 sec
+11.011976718902588
+learning rate = 0.0002000
+End of epoch 20 / 200 	 Time Taken: 11 sec
+11.013088941574097
+learning rate = 0.0002000
+End of epoch 21 / 200 	 Time Taken: 11 sec
+11.008564233779907
+learning rate = 0.0002000
+End of epoch 22 / 200 	 Time Taken: 11 sec
+11.010061502456665
+learning rate = 0.0002000
+End of epoch 23 / 200 	 Time Taken: 11 sec
+11.02050518989563
+learning rate = 0.0002000
+End of epoch 24 / 200 	 Time Taken: 11 sec
+11.002686738967896
+learning rate = 0.0002000
+End of epoch 25 / 200 	 Time Taken: 10 sec
+10.973638772964478
+learning rate = 0.0002000
+End of epoch 26 / 200 	 Time Taken: 11 sec
+11.014955282211304
+learning rate = 0.0002000
+End of epoch 27 / 200 	 Time Taken: 11 sec
+11.009822607040405
+learning rate = 0.0002000
+End of epoch 28 / 200 	 Time Taken: 11 sec
+11.054251670837402
+learning rate = 0.0002000
+End of epoch 29 / 200 	 Time Taken: 10 sec
+10.994948148727417
+learning rate = 0.0002000
+End of epoch 30 / 200 	 Time Taken: 11 sec
+11.03363585472107
+learning rate = 0.0002000
+End of epoch 31 / 200 	 Time Taken: 11 sec
+11.021097660064697
+learning rate = 0.0002000
+End of epoch 32 / 200 	 Time Taken: 11 sec
+11.013395547866821
+learning rate = 0.0002000
+End of epoch 33 / 200 	 Time Taken: 11 sec
+11.00914978981018
+learning rate = 0.0002000
+End of epoch 34 / 200 	 Time Taken: 11 sec
+11.003888130187988
+learning rate = 0.0002000
+End of epoch 35 / 200 	 Time Taken: 11 sec
+11.026123523712158
+learning rate = 0.0002000
+End of epoch 36 / 200 	 Time Taken: 10 sec
+10.989946603775024
+learning rate = 0.0002000
+End of epoch 37 / 200 	 Time Taken: 11 sec
+11.010233640670776
+learning rate = 0.0002000
+End of epoch 38 / 200 	 Time Taken: 11 sec
+11.021414995193481
+learning rate = 0.0002000
+End of epoch 39 / 200 	 Time Taken: 10 sec
+10.990497827529907
+learning rate = 0.0002000
+End of epoch 40 / 200 	 Time Taken: 11 sec
+11.040404081344604
+learning rate = 0.0002000
+End of epoch 41 / 200 	 Time Taken: 10 sec
+10.995058536529541
+learning rate = 0.0002000
+End of epoch 42 / 200 	 Time Taken: 11 sec
+11.008744239807129
+learning rate = 0.0002000
+End of epoch 43 / 200 	 Time Taken: 11 sec
+11.022592544555664
+learning rate = 0.0002000
+End of epoch 44 / 200 	 Time Taken: 11 sec
+11.026958703994751
+learning rate = 0.0002000
+End of epoch 45 / 200 	 Time Taken: 10 sec
+10.96293568611145
+learning rate = 0.0002000
+End of epoch 46 / 200 	 Time Taken: 11 sec
+11.028486967086792
+learning rate = 0.0002000
+End of epoch 47 / 200 	 Time Taken: 11 sec
+11.019221305847168
+learning rate = 0.0002000
+End of epoch 48 / 200 	 Time Taken: 11 sec
+11.027564525604248
+learning rate = 0.0002000
+End of epoch 49 / 200 	 Time Taken: 10 sec
+10.98536205291748
+learning rate = 0.0002000
+End of epoch 50 / 200 	 Time Taken: 54 sec
+54.841888427734375
+learning rate = 0.0002000
+End of epoch 51 / 200 	 Time Taken: 10 sec
+10.969078063964844
+learning rate = 0.0002000
+End of epoch 52 / 200 	 Time Taken: 10 sec
+10.942301988601685
+learning rate = 0.0002000
+End of epoch 53 / 200 	 Time Taken: 10 sec
+10.945119380950928
+learning rate = 0.0002000
+End of epoch 54 / 200 	 Time Taken: 10 sec
+10.985912084579468
+learning rate = 0.0002000
+End of epoch 55 / 200 	 Time Taken: 10 sec
+10.96799898147583
+learning rate = 0.0002000
+End of epoch 56 / 200 	 Time Taken: 10 sec
+10.978816986083984
+learning rate = 0.0002000
+End of epoch 57 / 200 	 Time Taken: 11 sec
+11.013383626937866
+learning rate = 0.0002000
+End of epoch 58 / 200 	 Time Taken: 10 sec
+10.996920108795166
+learning rate = 0.0002000
+End of epoch 59 / 200 	 Time Taken: 10 sec
+10.98681354522705
+learning rate = 0.0002000
+End of epoch 60 / 200 	 Time Taken: 10 sec
+10.990187406539917
+learning rate = 0.0002000
+End of epoch 61 / 200 	 Time Taken: 10 sec
+10.994994163513184
+learning rate = 0.0002000
+End of epoch 62 / 200 	 Time Taken: 11 sec
+11.011401891708374
+learning rate = 0.0002000
+End of epoch 63 / 200 	 Time Taken: 11 sec
+11.004584789276123
+learning rate = 0.0002000
+End of epoch 64 / 200 	 Time Taken: 11 sec
+11.018023014068604
+learning rate = 0.0002000
+End of epoch 65 / 200 	 Time Taken: 11 sec
+11.029014587402344
+learning rate = 0.0002000
+End of epoch 66 / 200 	 Time Taken: 10 sec
+10.998955249786377
+learning rate = 0.0002000
+End of epoch 67 / 200 	 Time Taken: 10 sec
+10.999296188354492
+learning rate = 0.0002000
+End of epoch 68 / 200 	 Time Taken: 11 sec
+11.047093152999878
+learning rate = 0.0002000
+End of epoch 69 / 200 	 Time Taken: 11 sec
+11.01213550567627
+learning rate = 0.0002000
+End of epoch 70 / 200 	 Time Taken: 10 sec
+10.983568906784058
+learning rate = 0.0002000
+End of epoch 71 / 200 	 Time Taken: 11 sec
+11.020968198776245
+learning rate = 0.0002000
+End of epoch 72 / 200 	 Time Taken: 11 sec
+11.044669151306152
+learning rate = 0.0002000
+End of epoch 73 / 200 	 Time Taken: 11 sec
+11.00802493095398
+learning rate = 0.0002000
+End of epoch 74 / 200 	 Time Taken: 10 sec
+10.999346733093262
+learning rate = 0.0002000
+End of epoch 75 / 200 	 Time Taken: 10 sec
+10.987500667572021
+learning rate = 0.0002000
+End of epoch 76 / 200 	 Time Taken: 11 sec
+11.034411430358887
+learning rate = 0.0002000
+End of epoch 77 / 200 	 Time Taken: 10 sec
+10.982271909713745
+learning rate = 0.0002000
+End of epoch 78 / 200 	 Time Taken: 11 sec
+11.014893293380737
+learning rate = 0.0002000
+End of epoch 79 / 200 	 Time Taken: 11 sec
+11.000612258911133
+learning rate = 0.0002000
+End of epoch 80 / 200 	 Time Taken: 10 sec
+10.992265701293945
+learning rate = 0.0002000
+End of epoch 81 / 200 	 Time Taken: 10 sec
+10.997751474380493
+learning rate = 0.0002000
+End of epoch 82 / 200 	 Time Taken: 11 sec
+11.038129806518555
+learning rate = 0.0002000
+End of epoch 83 / 200 	 Time Taken: 11 sec
+11.006772756576538
+learning rate = 0.0002000
+End of epoch 84 / 200 	 Time Taken: 10 sec
+10.975566625595093
+learning rate = 0.0002000
+End of epoch 85 / 200 	 Time Taken: 11 sec
+11.0046226978302
+learning rate = 0.0002000
+End of epoch 86 / 200 	 Time Taken: 11 sec
+11.022314071655273
+learning rate = 0.0002000
+End of epoch 87 / 200 	 Time Taken: 10 sec
+10.9964017868042
+learning rate = 0.0002000
+End of epoch 88 / 200 	 Time Taken: 10 sec
+10.994784593582153
+learning rate = 0.0002000
+End of epoch 89 / 200 	 Time Taken: 10 sec
+10.98043179512024
+learning rate = 0.0002000
+End of epoch 90 / 200 	 Time Taken: 10 sec
+10.992115020751953
+learning rate = 0.0002000
+End of epoch 91 / 200 	 Time Taken: 11 sec
+11.025162935256958
+learning rate = 0.0002000
+End of epoch 92 / 200 	 Time Taken: 11 sec
+11.003628730773926
+learning rate = 0.0002000
+End of epoch 93 / 200 	 Time Taken: 11 sec
+11.0292329788208
+learning rate = 0.0002000
+End of epoch 94 / 200 	 Time Taken: 11 sec
+11.004031419754028
+learning rate = 0.0002000
+End of epoch 95 / 200 	 Time Taken: 10 sec
+10.978283405303955
+learning rate = 0.0002000
+End of epoch 96 / 200 	 Time Taken: 11 sec
+11.057358264923096
+learning rate = 0.0002000
+End of epoch 97 / 200 	 Time Taken: 11 sec
+11.012277126312256
+learning rate = 0.0002000
+End of epoch 98 / 200 	 Time Taken: 11 sec
+11.021198749542236
+learning rate = 0.0002000
+End of epoch 99 / 200 	 Time Taken: 11 sec
+11.004076480865479
+learning rate = 0.0002000
+End of epoch 100 / 200 	 Time Taken: 54 sec
+54.891237020492554
+learning rate = 0.0002000
+End of epoch 101 / 200 	 Time Taken: 10 sec
+10.993379354476929
+learning rate = 0.0002000
+End of epoch 102 / 200 	 Time Taken: 10 sec
+10.971114873886108
+learning rate = 0.0002000
+End of epoch 103 / 200 	 Time Taken: 10 sec
+10.952497005462646
+learning rate = 0.0002000
+End of epoch 104 / 200 	 Time Taken: 10 sec
+10.96823501586914
+learning rate = 0.0002000
+End of epoch 105 / 200 	 Time Taken: 10 sec
+10.971585512161255
+learning rate = 0.0002000
+End of epoch 106 / 200 	 Time Taken: 10 sec
+10.964229583740234
+learning rate = 0.0002000
+End of epoch 107 / 200 	 Time Taken: 11 sec
+11.011993646621704
+learning rate = 0.0002000
+End of epoch 108 / 200 	 Time Taken: 10 sec
+10.975709199905396
+learning rate = 0.0002000
+End of epoch 109 / 200 	 Time Taken: 11 sec
+11.033515214920044
+learning rate = 0.0002000
+End of epoch 110 / 200 	 Time Taken: 10 sec
+10.981874942779541
+learning rate = 0.0002000
+End of epoch 111 / 200 	 Time Taken: 10 sec
+10.99768614768982
+learning rate = 0.0002000
+End of epoch 112 / 200 	 Time Taken: 11 sec
+11.025772333145142
+learning rate = 0.0002000
+End of epoch 113 / 200 	 Time Taken: 10 sec
+10.998875379562378
+learning rate = 0.0002000
+End of epoch 114 / 200 	 Time Taken: 11 sec
+11.041223287582397
+learning rate = 0.0002000
+End of epoch 115 / 200 	 Time Taken: 10 sec
+10.998398065567017
+learning rate = 0.0002000
+End of epoch 116 / 200 	 Time Taken: 11 sec
+11.014350652694702
+learning rate = 0.0002000
+End of epoch 117 / 200 	 Time Taken: 11 sec
+11.009653091430664
+learning rate = 0.0002000
+End of epoch 118 / 200 	 Time Taken: 11 sec
+11.08296823501587
+learning rate = 0.0002000
+End of epoch 119 / 200 	 Time Taken: 10 sec
+10.992517948150635
+learning rate = 0.0002000
+End of epoch 120 / 200 	 Time Taken: 11 sec
+11.008150339126587
+learning rate = 0.0002000
+End of epoch 121 / 200 	 Time Taken: 11 sec
+11.021861791610718
+learning rate = 0.0002000
+End of epoch 122 / 200 	 Time Taken: 11 sec
+11.003383874893188
+learning rate = 0.0002000
+End of epoch 123 / 200 	 Time Taken: 10 sec
+10.995693445205688
+learning rate = 0.0002000
+End of epoch 124 / 200 	 Time Taken: 10 sec
+10.992573738098145
+learning rate = 0.0002000
+End of epoch 125 / 200 	 Time Taken: 11 sec
+11.004429340362549
+learning rate = 0.0002000
+End of epoch 126 / 200 	 Time Taken: 11 sec
+11.031012535095215
+learning rate = 0.0002000
+End of epoch 127 / 200 	 Time Taken: 11 sec
+11.000154972076416
+learning rate = 0.0002000
+End of epoch 128 / 200 	 Time Taken: 11 sec
+11.012092113494873
+learning rate = 0.0002000
+End of epoch 129 / 200 	 Time Taken: 11 sec
+11.000715255737305
+learning rate = 0.0002000
+End of epoch 130 / 200 	 Time Taken: 11 sec
+11.03296184539795
+learning rate = 0.0002000
+End of epoch 131 / 200 	 Time Taken: 10 sec
+10.991643905639648
+learning rate = 0.0002000
+End of epoch 132 / 200 	 Time Taken: 11 sec
+11.025922536849976
+learning rate = 0.0002000
+End of epoch 133 / 200 	 Time Taken: 11 sec
+11.022134780883789
+learning rate = 0.0002000
+End of epoch 134 / 200 	 Time Taken: 11 sec
+11.011706113815308
+learning rate = 0.0002000
+End of epoch 135 / 200 	 Time Taken: 11 sec
+11.001207113265991
+learning rate = 0.0002000
+End of epoch 136 / 200 	 Time Taken: 11 sec
+11.005555391311646
+learning rate = 0.0002000
+End of epoch 137 / 200 	 Time Taken: 11 sec
+11.008715391159058
+learning rate = 0.0002000
+End of epoch 138 / 200 	 Time Taken: 11 sec
+11.008487224578857
+learning rate = 0.0002000
+End of epoch 139 / 200 	 Time Taken: 11 sec
+11.007330179214478
+learning rate = 0.0002000
+End of epoch 140 / 200 	 Time Taken: 10 sec
+10.999885320663452
+learning rate = 0.0002000
+End of epoch 141 / 200 	 Time Taken: 11 sec
+11.00468897819519
+learning rate = 0.0002000
+End of epoch 142 / 200 	 Time Taken: 11 sec
+11.016252040863037
+learning rate = 0.0002000
+End of epoch 143 / 200 	 Time Taken: 11 sec
+11.009600162506104
+learning rate = 0.0002000
+End of epoch 144 / 200 	 Time Taken: 10 sec
+10.982636451721191
+learning rate = 0.0002000
+End of epoch 145 / 200 	 Time Taken: 11 sec
+11.027037382125854
+learning rate = 0.0002000
+End of epoch 146 / 200 	 Time Taken: 11 sec
+11.035917282104492
+learning rate = 0.0002000
+End of epoch 147 / 200 	 Time Taken: 11 sec
+11.010624885559082
+learning rate = 0.0002000
+End of epoch 148 / 200 	 Time Taken: 11 sec
+11.004280805587769
+learning rate = 0.0002000
+End of epoch 149 / 200 	 Time Taken: 10 sec
+10.9995596408844
+learning rate = 0.0002000
+End of epoch 150 / 200 	 Time Taken: 54 sec
+54.7309136390686
+learning rate = 0.0002000
+End of epoch 151 / 200 	 Time Taken: 10 sec
+10.949901819229126
+learning rate = 0.0001961
+End of epoch 152 / 200 	 Time Taken: 10 sec
+10.948776960372925
+learning rate = 0.0001922
+End of epoch 153 / 200 	 Time Taken: 10 sec
+10.940258741378784
+learning rate = 0.0001882
+End of epoch 154 / 200 	 Time Taken: 10 sec
+10.961344242095947
+learning rate = 0.0001843
+End of epoch 155 / 200 	 Time Taken: 10 sec
+10.953250646591187
+learning rate = 0.0001804
+End of epoch 156 / 200 	 Time Taken: 10 sec
+10.979110956192017
+learning rate = 0.0001765
+End of epoch 157 / 200 	 Time Taken: 10 sec
+10.979457139968872
+learning rate = 0.0001725
+End of epoch 158 / 200 	 Time Taken: 10 sec
+10.981352806091309
+learning rate = 0.0001686
+End of epoch 159 / 200 	 Time Taken: 10 sec
+10.999194145202637
+learning rate = 0.0001647
+End of epoch 160 / 200 	 Time Taken: 11 sec
+11.004409551620483
+learning rate = 0.0001608
+End of epoch 161 / 200 	 Time Taken: 11 sec
+11.027842044830322
+learning rate = 0.0001569
+End of epoch 162 / 200 	 Time Taken: 11 sec
+11.013063907623291
+learning rate = 0.0001529
+End of epoch 163 / 200 	 Time Taken: 11 sec
+11.02731204032898
+learning rate = 0.0001490
+End of epoch 164 / 200 	 Time Taken: 11 sec
+11.038152933120728
+learning rate = 0.0001451
+End of epoch 165 / 200 	 Time Taken: 11 sec
+11.003686904907227
+learning rate = 0.0001412
+End of epoch 166 / 200 	 Time Taken: 10 sec
+10.988435983657837
+learning rate = 0.0001373
+End of epoch 167 / 200 	 Time Taken: 10 sec
+10.995712041854858
+learning rate = 0.0001333
+End of epoch 168 / 200 	 Time Taken: 11 sec
+11.024368047714233
+learning rate = 0.0001294
+End of epoch 169 / 200 	 Time Taken: 11 sec
+11.020037174224854
+learning rate = 0.0001255
+End of epoch 170 / 200 	 Time Taken: 11 sec
+11.017827033996582
+learning rate = 0.0001216
+End of epoch 171 / 200 	 Time Taken: 11 sec
+11.028352737426758
+learning rate = 0.0001176
+End of epoch 172 / 200 	 Time Taken: 11 sec
+11.00118350982666
+learning rate = 0.0001137
+End of epoch 173 / 200 	 Time Taken: 10 sec
+10.988170146942139
+learning rate = 0.0001098
+End of epoch 174 / 200 	 Time Taken: 11 sec
+11.000344514846802
+learning rate = 0.0001059
+End of epoch 175 / 200 	 Time Taken: 10 sec
+10.99964714050293
+learning rate = 0.0001020
+End of epoch 176 / 200 	 Time Taken: 10 sec
+10.991347312927246
+learning rate = 0.0000980
+End of epoch 177 / 200 	 Time Taken: 10 sec
+10.984237909317017
+learning rate = 0.0000941
+End of epoch 178 / 200 	 Time Taken: 11 sec
+11.026978254318237
+learning rate = 0.0000902
+End of epoch 179 / 200 	 Time Taken: 10 sec
+10.999083518981934
+learning rate = 0.0000863
+End of epoch 180 / 200 	 Time Taken: 11 sec
+11.043283939361572
+learning rate = 0.0000824
+End of epoch 181 / 200 	 Time Taken: 11 sec
+11.022860765457153
+learning rate = 0.0000784
+End of epoch 182 / 200 	 Time Taken: 11 sec
+11.033580541610718
+learning rate = 0.0000745
+End of epoch 183 / 200 	 Time Taken: 10 sec
+10.983745098114014
+learning rate = 0.0000706
+End of epoch 184 / 200 	 Time Taken: 10 sec
+10.991144895553589
+learning rate = 0.0000667
+End of epoch 185 / 200 	 Time Taken: 10 sec
+10.994094133377075
+learning rate = 0.0000627
+End of epoch 186 / 200 	 Time Taken: 10 sec
+10.990909099578857
+learning rate = 0.0000588
+End of epoch 187 / 200 	 Time Taken: 11 sec
+11.001295328140259
+learning rate = 0.0000549
+End of epoch 188 / 200 	 Time Taken: 10 sec
+10.992453336715698
+learning rate = 0.0000510
+End of epoch 189 / 200 	 Time Taken: 10 sec
+10.978673219680786
+learning rate = 0.0000471
+End of epoch 190 / 200 	 Time Taken: 10 sec
+10.977750062942505
+learning rate = 0.0000431
+End of epoch 191 / 200 	 Time Taken: 10 sec
+10.9794020652771
+learning rate = 0.0000392
+End of epoch 192 / 200 	 Time Taken: 10 sec
+10.98741340637207
+learning rate = 0.0000353
+End of epoch 193 / 200 	 Time Taken: 10 sec
+10.95619821548462
+learning rate = 0.0000314
+End of epoch 194 / 200 	 Time Taken: 10 sec
+10.95876693725586
+learning rate = 0.0000275
+End of epoch 195 / 200 	 Time Taken: 11 sec
+11.000873804092407
+learning rate = 0.0000235
+End of epoch 196 / 200 	 Time Taken: 10 sec
+10.978203773498535
+learning rate = 0.0000196
+End of epoch 197 / 200 	 Time Taken: 11 sec
+11.00284743309021
+learning rate = 0.0000157
+End of epoch 198 / 200 	 Time Taken: 11 sec
+11.007432699203491
+learning rate = 0.0000118
+End of epoch 199 / 200 	 Time Taken: 10 sec
+10.959886312484741
+learning rate = 0.0000078
+End of epoch 200 / 200 	 Time Taken: 54 sec
+54.754106521606445
+learning rate = 0.0000039
+dataset [CnFewFusionDataset] was created
+dataset [CnFewFusionDataset] was created
+#training images = 775
+#training images = 972
+initialize network with xavier
+initialize network with xavier
+model [AGISNetModel] was created
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 52.438 M
+[Network D] Total number of parameters : 3.464 M
+-----------------------------------------------
+End of epoch 1 / 200 	 Time Taken: 10 sec
+10.970694065093994
+learning rate = 0.0002000
+End of epoch 2 / 200 	 Time Taken: 10 sec
+10.960165977478027
+learning rate = 0.0002000
+End of epoch 3 / 200 	 Time Taken: 10 sec
+10.935675859451294
+learning rate = 0.0002000
+End of epoch 4 / 200 	 Time Taken: 10 sec
+10.972264528274536
+learning rate = 0.0002000
+End of epoch 5 / 200 	 Time Taken: 10 sec
+10.958818197250366
+learning rate = 0.0002000
+End of epoch 6 / 200 	 Time Taken: 10 sec
+10.959961175918579
+learning rate = 0.0002000
+End of epoch 7 / 200 	 Time Taken: 11 sec
+11.00952410697937
+learning rate = 0.0002000
+End of epoch 8 / 200 	 Time Taken: 11 sec
+11.002723217010498
+learning rate = 0.0002000
+End of epoch 9 / 200 	 Time Taken: 10 sec
+10.98820972442627
+learning rate = 0.0002000
+End of epoch 10 / 200 	 Time Taken: 11 sec
+11.024298191070557
+learning rate = 0.0002000
+End of epoch 11 / 200 	 Time Taken: 11 sec
+11.002416372299194
+learning rate = 0.0002000
+End of epoch 12 / 200 	 Time Taken: 10 sec
+10.984978437423706
+learning rate = 0.0002000
+End of epoch 13 / 200 	 Time Taken: 11 sec
+11.020221710205078
+learning rate = 0.0002000
+End of epoch 14 / 200 	 Time Taken: 11 sec
+11.051960468292236
+learning rate = 0.0002000
+End of epoch 15 / 200 	 Time Taken: 11 sec
+11.007055521011353
+learning rate = 0.0002000
+End of epoch 16 / 200 	 Time Taken: 11 sec
+11.004729270935059
+learning rate = 0.0002000
+End of epoch 17 / 200 	 Time Taken: 11 sec
+11.03037714958191
+learning rate = 0.0002000
+End of epoch 18 / 200 	 Time Taken: 10 sec
+10.98601746559143
+learning rate = 0.0002000
+End of epoch 19 / 200 	 Time Taken: 10 sec
+10.995415210723877
+learning rate = 0.0002000
+End of epoch 20 / 200 	 Time Taken: 11 sec
+11.016839742660522
+learning rate = 0.0002000
+End of epoch 21 / 200 	 Time Taken: 11 sec
+11.022839546203613
+learning rate = 0.0002000
+End of epoch 22 / 200 	 Time Taken: 11 sec
+11.002331495285034
+learning rate = 0.0002000
+End of epoch 23 / 200 	 Time Taken: 11 sec
+11.016150712966919
+learning rate = 0.0002000
+End of epoch 24 / 200 	 Time Taken: 11 sec
+11.001866579055786
+learning rate = 0.0002000
+End of epoch 25 / 200 	 Time Taken: 11 sec
+11.036171436309814
+learning rate = 0.0002000
+End of epoch 26 / 200 	 Time Taken: 11 sec
+11.005884885787964
+learning rate = 0.0002000
+End of epoch 27 / 200 	 Time Taken: 10 sec
+10.995270729064941
+learning rate = 0.0002000
+End of epoch 28 / 200 	 Time Taken: 10 sec
+10.993544578552246
+learning rate = 0.0002000
+End of epoch 29 / 200 	 Time Taken: 11 sec
+11.010819435119629
+learning rate = 0.0002000
+End of epoch 30 / 200 	 Time Taken: 11 sec
+11.019892454147339
+learning rate = 0.0002000
+End of epoch 31 / 200 	 Time Taken: 11 sec
+11.0008225440979
+learning rate = 0.0002000
+End of epoch 32 / 200 	 Time Taken: 11 sec
+11.01229453086853
+learning rate = 0.0002000
+End of epoch 33 / 200 	 Time Taken: 11 sec
+11.02833604812622
+learning rate = 0.0002000
+End of epoch 34 / 200 	 Time Taken: 11 sec
+11.029840230941772
+learning rate = 0.0002000
+End of epoch 35 / 200 	 Time Taken: 11 sec
+11.022952318191528
+learning rate = 0.0002000
+End of epoch 36 / 200 	 Time Taken: 10 sec
+10.99733567237854
+learning rate = 0.0002000
+End of epoch 37 / 200 	 Time Taken: 11 sec
+11.004159212112427
+learning rate = 0.0002000
+End of epoch 38 / 200 	 Time Taken: 11 sec
+11.056928873062134
+learning rate = 0.0002000
+End of epoch 39 / 200 	 Time Taken: 11 sec
+11.003590106964111
+learning rate = 0.0002000
+End of epoch 40 / 200 	 Time Taken: 10 sec
+10.989131450653076
+learning rate = 0.0002000
+End of epoch 41 / 200 	 Time Taken: 11 sec
+11.017804145812988
+learning rate = 0.0002000
+End of epoch 42 / 200 	 Time Taken: 11 sec
+11.030377388000488
+learning rate = 0.0002000
+End of epoch 43 / 200 	 Time Taken: 11 sec
+11.000257015228271
+learning rate = 0.0002000
+End of epoch 44 / 200 	 Time Taken: 11 sec
+11.026474952697754
+learning rate = 0.0002000
+End of epoch 45 / 200 	 Time Taken: 11 sec
+11.042039632797241
+learning rate = 0.0002000
+End of epoch 46 / 200 	 Time Taken: 11 sec
+11.005608081817627
+learning rate = 0.0002000
+End of epoch 47 / 200 	 Time Taken: 11 sec
+11.008656024932861
+learning rate = 0.0002000
+End of epoch 48 / 200 	 Time Taken: 11 sec
+11.005858421325684
+learning rate = 0.0002000
+End of epoch 49 / 200 	 Time Taken: 10 sec
+10.993809461593628
+learning rate = 0.0002000
+End of epoch 50 / 200 	 Time Taken: 54 sec
+54.81106996536255
+learning rate = 0.0002000
+End of epoch 51 / 200 	 Time Taken: 10 sec
+10.955040454864502
+learning rate = 0.0002000
+End of epoch 52 / 200 	 Time Taken: 10 sec
+10.956198453903198
+learning rate = 0.0002000
+End of epoch 53 / 200 	 Time Taken: 10 sec
+10.938438892364502
+learning rate = 0.0002000
+End of epoch 54 / 200 	 Time Taken: 10 sec
+10.953397274017334
+learning rate = 0.0002000
+End of epoch 55 / 200 	 Time Taken: 10 sec
+10.988609790802002
+learning rate = 0.0002000
+End of epoch 56 / 200 	 Time Taken: 11 sec
+11.037116289138794
+learning rate = 0.0002000
+End of epoch 57 / 200 	 Time Taken: 11 sec
+11.001851558685303
+learning rate = 0.0002000
+End of epoch 58 / 200 	 Time Taken: 11 sec
+11.01384949684143
+learning rate = 0.0002000
+End of epoch 59 / 200 	 Time Taken: 11 sec
+11.019569158554077
+learning rate = 0.0002000
+End of epoch 60 / 200 	 Time Taken: 11 sec
+11.001930236816406
+learning rate = 0.0002000
+End of epoch 61 / 200 	 Time Taken: 10 sec
+10.991949558258057
+learning rate = 0.0002000
+End of epoch 62 / 200 	 Time Taken: 11 sec
+11.077219247817993
+learning rate = 0.0002000
+End of epoch 63 / 200 	 Time Taken: 11 sec
+11.022894144058228
+learning rate = 0.0002000
+End of epoch 64 / 200 	 Time Taken: 11 sec
+11.036464929580688
+learning rate = 0.0002000
+End of epoch 65 / 200 	 Time Taken: 11 sec
+11.019428491592407
+learning rate = 0.0002000
+End of epoch 66 / 200 	 Time Taken: 10 sec
+10.998124837875366
+learning rate = 0.0002000
+End of epoch 67 / 200 	 Time Taken: 11 sec
+11.025196313858032
+learning rate = 0.0002000
+End of epoch 68 / 200 	 Time Taken: 11 sec
+11.010980367660522
+learning rate = 0.0002000
+End of epoch 69 / 200 	 Time Taken: 11 sec
+11.02755093574524
+learning rate = 0.0002000
+End of epoch 70 / 200 	 Time Taken: 11 sec
+11.031134843826294
+learning rate = 0.0002000
+End of epoch 71 / 200 	 Time Taken: 11 sec
+11.020145654678345
+learning rate = 0.0002000
+End of epoch 72 / 200 	 Time Taken: 11 sec
+11.015556573867798
+learning rate = 0.0002000
+End of epoch 73 / 200 	 Time Taken: 11 sec
+11.013994693756104
+learning rate = 0.0002000
+End of epoch 74 / 200 	 Time Taken: 11 sec
+11.016874313354492
+learning rate = 0.0002000
+End of epoch 75 / 200 	 Time Taken: 10 sec
+10.998363971710205
+learning rate = 0.0002000
+End of epoch 76 / 200 	 Time Taken: 11 sec
+11.018195867538452
+learning rate = 0.0002000
+End of epoch 77 / 200 	 Time Taken: 11 sec
+11.009390592575073
+learning rate = 0.0002000
+End of epoch 78 / 200 	 Time Taken: 11 sec
+11.022719383239746
+learning rate = 0.0002000
+End of epoch 79 / 200 	 Time Taken: 10 sec
+10.986681461334229
+learning rate = 0.0002000
+End of epoch 80 / 200 	 Time Taken: 11 sec
+11.060478448867798
+learning rate = 0.0002000
+End of epoch 81 / 200 	 Time Taken: 10 sec
+10.977865219116211
+learning rate = 0.0002000
+End of epoch 82 / 200 	 Time Taken: 11 sec
+11.037034034729004
+learning rate = 0.0002000
+End of epoch 83 / 200 	 Time Taken: 11 sec
+11.018922090530396
+learning rate = 0.0002000
+End of epoch 84 / 200 	 Time Taken: 11 sec
+11.027380228042603
+learning rate = 0.0002000
+End of epoch 85 / 200 	 Time Taken: 11 sec
+11.047117471694946
+learning rate = 0.0002000
+End of epoch 86 / 200 	 Time Taken: 11 sec
+11.01342487335205
+learning rate = 0.0002000
+End of epoch 87 / 200 	 Time Taken: 11 sec
+11.000072717666626
+learning rate = 0.0002000
+End of epoch 88 / 200 	 Time Taken: 11 sec
+11.035437822341919
+learning rate = 0.0002000
+End of epoch 89 / 200 	 Time Taken: 11 sec
+11.04025650024414
+learning rate = 0.0002000
+End of epoch 90 / 200 	 Time Taken: 11 sec
+11.006491422653198
+learning rate = 0.0002000
+End of epoch 91 / 200 	 Time Taken: 10 sec
+10.97938346862793
+learning rate = 0.0002000
+End of epoch 92 / 200 	 Time Taken: 11 sec
+11.016435146331787
+learning rate = 0.0002000
+End of epoch 93 / 200 	 Time Taken: 10 sec
+10.999096393585205
+learning rate = 0.0002000
+End of epoch 94 / 200 	 Time Taken: 11 sec
+11.033031225204468
+learning rate = 0.0002000
+End of epoch 95 / 200 	 Time Taken: 11 sec
+11.023083209991455
+learning rate = 0.0002000
+End of epoch 96 / 200 	 Time Taken: 11 sec
+11.013056516647339
+learning rate = 0.0002000
+End of epoch 97 / 200 	 Time Taken: 11 sec
+11.000294208526611
+learning rate = 0.0002000
+End of epoch 98 / 200 	 Time Taken: 11 sec
+11.039271831512451
+learning rate = 0.0002000
+End of epoch 99 / 200 	 Time Taken: 11 sec
+11.010679006576538
+learning rate = 0.0002000
+End of epoch 100 / 200 	 Time Taken: 54 sec
+54.97913479804993
+learning rate = 0.0002000
+End of epoch 101 / 200 	 Time Taken: 10 sec
+10.98877477645874
+learning rate = 0.0002000
+End of epoch 102 / 200 	 Time Taken: 10 sec
+10.97538161277771
+learning rate = 0.0002000
+End of epoch 103 / 200 	 Time Taken: 10 sec
+10.959433555603027
+learning rate = 0.0002000
+End of epoch 104 / 200 	 Time Taken: 10 sec
+10.966782569885254
+learning rate = 0.0002000
+End of epoch 105 / 200 	 Time Taken: 10 sec
+10.995256185531616
+learning rate = 0.0002000
+End of epoch 106 / 200 	 Time Taken: 11 sec
+11.024733781814575
+learning rate = 0.0002000
+End of epoch 107 / 200 	 Time Taken: 10 sec
+10.971706867218018
+learning rate = 0.0002000
+End of epoch 108 / 200 	 Time Taken: 10 sec
+10.9757821559906
+learning rate = 0.0002000
+End of epoch 109 / 200 	 Time Taken: 10 sec
+10.986254930496216
+learning rate = 0.0002000
+End of epoch 110 / 200 	 Time Taken: 11 sec
+11.005881071090698
+learning rate = 0.0002000
+End of epoch 111 / 200 	 Time Taken: 11 sec
+11.007771253585815
+learning rate = 0.0002000
+End of epoch 112 / 200 	 Time Taken: 11 sec
+11.026191711425781
+learning rate = 0.0002000
+End of epoch 113 / 200 	 Time Taken: 11 sec
+11.016443014144897
+learning rate = 0.0002000
+End of epoch 114 / 200 	 Time Taken: 11 sec
+11.008963108062744
+learning rate = 0.0002000
+End of epoch 115 / 200 	 Time Taken: 10 sec
+10.998024225234985
+learning rate = 0.0002000
+End of epoch 116 / 200 	 Time Taken: 10 sec
+10.984565734863281
+learning rate = 0.0002000
+End of epoch 117 / 200 	 Time Taken: 10 sec
+10.996315956115723
+learning rate = 0.0002000
+End of epoch 118 / 200 	 Time Taken: 11 sec
+11.02720594406128
+learning rate = 0.0002000
+End of epoch 119 / 200 	 Time Taken: 11 sec
+11.007693767547607
+learning rate = 0.0002000
+End of epoch 120 / 200 	 Time Taken: 10 sec
+10.996237516403198
+learning rate = 0.0002000
+End of epoch 121 / 200 	 Time Taken: 11 sec
+11.024000644683838
+learning rate = 0.0002000
+End of epoch 122 / 200 	 Time Taken: 11 sec
+11.055395603179932
+learning rate = 0.0002000
+End of epoch 123 / 200 	 Time Taken: 11 sec
+11.02389144897461
+learning rate = 0.0002000
+End of epoch 124 / 200 	 Time Taken: 11 sec
+11.016587495803833
+learning rate = 0.0002000
+End of epoch 125 / 200 	 Time Taken: 10 sec
+10.997610807418823
+learning rate = 0.0002000
+End of epoch 126 / 200 	 Time Taken: 11 sec
+11.043572902679443
+learning rate = 0.0002000
+End of epoch 127 / 200 	 Time Taken: 10 sec
+10.976567029953003
+learning rate = 0.0002000
+End of epoch 128 / 200 	 Time Taken: 10 sec
+10.98261833190918
+learning rate = 0.0002000
+End of epoch 129 / 200 	 Time Taken: 10 sec
+10.984905004501343
+learning rate = 0.0002000
+End of epoch 130 / 200 	 Time Taken: 10 sec
+10.998474597930908
+learning rate = 0.0002000
+End of epoch 131 / 200 	 Time Taken: 11 sec
+11.024706840515137
+learning rate = 0.0002000
+End of epoch 132 / 200 	 Time Taken: 11 sec
+11.012681484222412
+learning rate = 0.0002000
+End of epoch 133 / 200 	 Time Taken: 10 sec
+10.985801935195923
+learning rate = 0.0002000
+End of epoch 134 / 200 	 Time Taken: 11 sec
+11.014009952545166
+learning rate = 0.0002000
+End of epoch 135 / 200 	 Time Taken: 10 sec
+10.975328207015991
+learning rate = 0.0002000
+End of epoch 136 / 200 	 Time Taken: 10 sec
+10.983099460601807
+learning rate = 0.0002000
+End of epoch 137 / 200 	 Time Taken: 11 sec
+11.039209604263306
+learning rate = 0.0002000
+End of epoch 138 / 200 	 Time Taken: 10 sec
+10.98991346359253
+learning rate = 0.0002000
+End of epoch 139 / 200 	 Time Taken: 10 sec
+10.997502088546753
+learning rate = 0.0002000
+End of epoch 140 / 200 	 Time Taken: 10 sec
+10.982166051864624
+learning rate = 0.0002000
+End of epoch 141 / 200 	 Time Taken: 11 sec
+11.015970706939697
+learning rate = 0.0002000
+End of epoch 142 / 200 	 Time Taken: 11 sec
+11.005881309509277
+learning rate = 0.0002000
+End of epoch 143 / 200 	 Time Taken: 10 sec
+10.993157625198364
+learning rate = 0.0002000
+End of epoch 144 / 200 	 Time Taken: 10 sec
+10.995562314987183
+learning rate = 0.0002000
+End of epoch 145 / 200 	 Time Taken: 10 sec
+10.987888097763062
+learning rate = 0.0002000
+End of epoch 146 / 200 	 Time Taken: 10 sec
+10.977221727371216
+learning rate = 0.0002000
+End of epoch 147 / 200 	 Time Taken: 10 sec
+10.99602723121643
+learning rate = 0.0002000
+End of epoch 148 / 200 	 Time Taken: 10 sec
+10.998321771621704
+learning rate = 0.0002000
+End of epoch 149 / 200 	 Time Taken: 10 sec
+10.961450099945068
+learning rate = 0.0002000
+End of epoch 150 / 200 	 Time Taken: 54 sec
+54.776841163635254
+learning rate = 0.0002000
+End of epoch 151 / 200 	 Time Taken: 10 sec
+10.989475011825562
+learning rate = 0.0001961
+End of epoch 152 / 200 	 Time Taken: 10 sec
+10.973066091537476
+learning rate = 0.0001922
+End of epoch 153 / 200 	 Time Taken: 10 sec
+10.92215871810913
+learning rate = 0.0001882
+End of epoch 154 / 200 	 Time Taken: 10 sec
+10.990215063095093
+learning rate = 0.0001843
+End of epoch 155 / 200 	 Time Taken: 10 sec
+10.979996681213379
+learning rate = 0.0001804
+End of epoch 156 / 200 	 Time Taken: 11 sec
+11.027657270431519
+learning rate = 0.0001765
+End of epoch 157 / 200 	 Time Taken: 10 sec
+10.976335287094116
+learning rate = 0.0001725
+End of epoch 158 / 200 	 Time Taken: 10 sec
+10.981438875198364
+learning rate = 0.0001686
+End of epoch 159 / 200 	 Time Taken: 10 sec
+10.977242708206177
+learning rate = 0.0001647
+End of epoch 160 / 200 	 Time Taken: 11 sec
+11.015793800354004
+learning rate = 0.0001608
+End of epoch 161 / 200 	 Time Taken: 10 sec
+10.999065399169922
+learning rate = 0.0001569
+End of epoch 162 / 200 	 Time Taken: 11 sec
+11.009832620620728
+learning rate = 0.0001529
+End of epoch 163 / 200 	 Time Taken: 11 sec
+11.01597285270691
+learning rate = 0.0001490
+End of epoch 164 / 200 	 Time Taken: 10 sec
+10.996181964874268
+learning rate = 0.0001451
+End of epoch 165 / 200 	 Time Taken: 11 sec
+11.000051736831665
+learning rate = 0.0001412
+End of epoch 166 / 200 	 Time Taken: 10 sec
+10.986379146575928
+learning rate = 0.0001373
+End of epoch 167 / 200 	 Time Taken: 11 sec
+11.025295972824097
+learning rate = 0.0001333
+End of epoch 168 / 200 	 Time Taken: 11 sec
+11.006071090698242
+learning rate = 0.0001294
+End of epoch 169 / 200 	 Time Taken: 11 sec
+11.00202226638794
+learning rate = 0.0001255
+End of epoch 170 / 200 	 Time Taken: 10 sec
+10.996717691421509
+learning rate = 0.0001216
+End of epoch 171 / 200 	 Time Taken: 10 sec
+10.987473726272583
+learning rate = 0.0001176
+End of epoch 172 / 200 	 Time Taken: 11 sec
+11.013890027999878
+learning rate = 0.0001137
+End of epoch 173 / 200 	 Time Taken: 11 sec
+11.009467840194702
+learning rate = 0.0001098
+End of epoch 174 / 200 	 Time Taken: 11 sec
+11.027658939361572
+learning rate = 0.0001059
+End of epoch 175 / 200 	 Time Taken: 10 sec
+10.985766887664795
+learning rate = 0.0001020
+End of epoch 176 / 200 	 Time Taken: 11 sec
+11.016862630844116
+learning rate = 0.0000980
+End of epoch 177 / 200 	 Time Taken: 11 sec
+11.02326774597168
+learning rate = 0.0000941
+End of epoch 178 / 200 	 Time Taken: 11 sec
+11.008630514144897
+learning rate = 0.0000902
+End of epoch 179 / 200 	 Time Taken: 11 sec
+11.007985830307007
+learning rate = 0.0000863
+End of epoch 180 / 200 	 Time Taken: 11 sec
+11.001305341720581
+learning rate = 0.0000824
+End of epoch 181 / 200 	 Time Taken: 11 sec
+11.008488893508911
+learning rate = 0.0000784
+End of epoch 182 / 200 	 Time Taken: 11 sec
+11.027106285095215
+learning rate = 0.0000745
+End of epoch 183 / 200 	 Time Taken: 10 sec
+10.975938320159912
+learning rate = 0.0000706
+End of epoch 184 / 200 	 Time Taken: 10 sec
+10.980640888214111
+learning rate = 0.0000667
+End of epoch 185 / 200 	 Time Taken: 10 sec
+10.987072467803955
+learning rate = 0.0000627
+End of epoch 186 / 200 	 Time Taken: 10 sec
+10.994597911834717
+learning rate = 0.0000588
+End of epoch 187 / 200 	 Time Taken: 10 sec
+10.9953453540802
+learning rate = 0.0000549
+End of epoch 188 / 200 	 Time Taken: 10 sec
+10.989682674407959
+learning rate = 0.0000510
+End of epoch 189 / 200 	 Time Taken: 11 sec
+11.012832880020142
+learning rate = 0.0000471
+End of epoch 190 / 200 	 Time Taken: 11 sec
+11.010975122451782
+learning rate = 0.0000431
+End of epoch 191 / 200 	 Time Taken: 10 sec
+10.989197731018066
+learning rate = 0.0000392
+End of epoch 192 / 200 	 Time Taken: 11 sec
+11.01778268814087
+learning rate = 0.0000353
+End of epoch 193 / 200 	 Time Taken: 11 sec
+11.013922691345215
+learning rate = 0.0000314
+End of epoch 194 / 200 	 Time Taken: 10 sec
+10.993813037872314
+learning rate = 0.0000275
+End of epoch 195 / 200 	 Time Taken: 10 sec
+10.97952389717102
+learning rate = 0.0000235
+End of epoch 196 / 200 	 Time Taken: 11 sec
+11.024729251861572
+learning rate = 0.0000196
+End of epoch 197 / 200 	 Time Taken: 11 sec
+11.023117065429688
+learning rate = 0.0000157
+End of epoch 198 / 200 	 Time Taken: 10 sec
+10.981913328170776
+learning rate = 0.0000118
+End of epoch 199 / 200 	 Time Taken: 11 sec
+11.005303859710693
+learning rate = 0.0000078
+End of epoch 200 / 200 	 Time Taken: 54 sec
+54.86515665054321
+learning rate = 0.0000039
+dataset [CnFewFusionDataset] was created
+dataset [CnFewFusionDataset] was created
+#training images = 775
+#training images = 972
+initialize network with xavier
+initialize network with xavier
+model [AGISNetModel] was created
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 52.438 M
+[Network D] Total number of parameters : 3.464 M
+-----------------------------------------------
+End of epoch 1 / 200 	 Time Taken: 10 sec
+10.982170343399048
+learning rate = 0.0002000
+End of epoch 2 / 200 	 Time Taken: 10 sec
+10.999152183532715
+learning rate = 0.0002000
+End of epoch 3 / 200 	 Time Taken: 10 sec
+10.977440595626831
+learning rate = 0.0002000
+End of epoch 4 / 200 	 Time Taken: 10 sec
+10.965311050415039
+learning rate = 0.0002000
+End of epoch 5 / 200 	 Time Taken: 10 sec
+10.98944878578186
+learning rate = 0.0002000
+End of epoch 6 / 200 	 Time Taken: 10 sec
+10.983837842941284
+learning rate = 0.0002000
+End of epoch 7 / 200 	 Time Taken: 10 sec
+10.99183702468872
+learning rate = 0.0002000
+End of epoch 8 / 200 	 Time Taken: 10 sec
+10.99480652809143
+learning rate = 0.0002000
+End of epoch 9 / 200 	 Time Taken: 11 sec
+11.003138303756714
+learning rate = 0.0002000
+End of epoch 10 / 200 	 Time Taken: 11 sec
+11.028600454330444
+learning rate = 0.0002000
+End of epoch 11 / 200 	 Time Taken: 11 sec
+11.00020456314087
+learning rate = 0.0002000
+End of epoch 12 / 200 	 Time Taken: 11 sec
+11.031551599502563
+learning rate = 0.0002000
+End of epoch 13 / 200 	 Time Taken: 11 sec
+11.010847806930542
+learning rate = 0.0002000
+End of epoch 14 / 200 	 Time Taken: 11 sec
+11.009713172912598
+learning rate = 0.0002000
+End of epoch 15 / 200 	 Time Taken: 11 sec
+11.020004272460938
+learning rate = 0.0002000
+End of epoch 16 / 200 	 Time Taken: 11 sec
+11.034822225570679
+learning rate = 0.0002000
+End of epoch 17 / 200 	 Time Taken: 10 sec
+10.970612049102783
+learning rate = 0.0002000
+End of epoch 18 / 200 	 Time Taken: 11 sec
+11.020630836486816
+learning rate = 0.0002000
+End of epoch 19 / 200 	 Time Taken: 10 sec
+10.992928743362427
+learning rate = 0.0002000
+End of epoch 20 / 200 	 Time Taken: 11 sec
+11.0279221534729
+learning rate = 0.0002000
+End of epoch 21 / 200 	 Time Taken: 11 sec
+11.017497539520264
+learning rate = 0.0002000
+End of epoch 22 / 200 	 Time Taken: 10 sec
+10.993489742279053
+learning rate = 0.0002000
+End of epoch 23 / 200 	 Time Taken: 10 sec
+10.987656116485596
+learning rate = 0.0002000
+End of epoch 24 / 200 	 Time Taken: 11 sec
+11.023289442062378
+learning rate = 0.0002000
+End of epoch 25 / 200 	 Time Taken: 11 sec
+11.045662641525269
+learning rate = 0.0002000
+End of epoch 26 / 200 	 Time Taken: 11 sec
+11.046231031417847
+learning rate = 0.0002000
+End of epoch 27 / 200 	 Time Taken: 10 sec
+10.989899158477783
+learning rate = 0.0002000
+End of epoch 28 / 200 	 Time Taken: 11 sec
+11.010141134262085
+learning rate = 0.0002000
+End of epoch 29 / 200 	 Time Taken: 11 sec
+11.01820158958435
+learning rate = 0.0002000
+End of epoch 30 / 200 	 Time Taken: 11 sec
+11.005004405975342
+learning rate = 0.0002000
+End of epoch 31 / 200 	 Time Taken: 11 sec
+11.029085159301758
+learning rate = 0.0002000
+End of epoch 32 / 200 	 Time Taken: 11 sec
+11.00859546661377
+learning rate = 0.0002000
+End of epoch 33 / 200 	 Time Taken: 11 sec
+11.003371953964233
+learning rate = 0.0002000
+End of epoch 34 / 200 	 Time Taken: 10 sec
+10.988440752029419
+learning rate = 0.0002000
+End of epoch 35 / 200 	 Time Taken: 11 sec
+11.011645555496216
+learning rate = 0.0002000
+End of epoch 36 / 200 	 Time Taken: 10 sec
+10.99901008605957
+learning rate = 0.0002000
+End of epoch 37 / 200 	 Time Taken: 10 sec
+10.998341083526611
+learning rate = 0.0002000
+End of epoch 38 / 200 	 Time Taken: 11 sec
+11.015419721603394
+learning rate = 0.0002000
+End of epoch 39 / 200 	 Time Taken: 11 sec
+11.020303010940552
+learning rate = 0.0002000
+End of epoch 40 / 200 	 Time Taken: 11 sec
+11.002807378768921
+learning rate = 0.0002000
+End of epoch 41 / 200 	 Time Taken: 11 sec
+11.006830930709839
+learning rate = 0.0002000
+End of epoch 42 / 200 	 Time Taken: 11 sec
+11.00421690940857
+learning rate = 0.0002000
+End of epoch 43 / 200 	 Time Taken: 11 sec
+11.021204471588135
+learning rate = 0.0002000
+End of epoch 44 / 200 	 Time Taken: 10 sec
+10.992409229278564
+learning rate = 0.0002000
+End of epoch 45 / 200 	 Time Taken: 11 sec
+11.022596836090088
+learning rate = 0.0002000
+End of epoch 46 / 200 	 Time Taken: 10 sec
+10.997905254364014
+learning rate = 0.0002000
+End of epoch 47 / 200 	 Time Taken: 11 sec
+11.030964136123657
+learning rate = 0.0002000
+End of epoch 48 / 200 	 Time Taken: 10 sec
+10.997548818588257
+learning rate = 0.0002000
+End of epoch 49 / 200 	 Time Taken: 11 sec
+11.015994310379028
+learning rate = 0.0002000
+End of epoch 50 / 200 	 Time Taken: 55 sec
+55.05627727508545
+learning rate = 0.0002000
+End of epoch 51 / 200 	 Time Taken: 10 sec
+10.989272117614746
+learning rate = 0.0002000
+End of epoch 52 / 200 	 Time Taken: 10 sec
+10.969210863113403
+learning rate = 0.0002000
+End of epoch 53 / 200 	 Time Taken: 10 sec
+10.938311338424683
+learning rate = 0.0002000
+End of epoch 54 / 200 	 Time Taken: 10 sec
+10.94003939628601
+learning rate = 0.0002000
+End of epoch 55 / 200 	 Time Taken: 10 sec
+10.944446325302124
+learning rate = 0.0002000
+End of epoch 56 / 200 	 Time Taken: 11 sec
+11.021731615066528
+learning rate = 0.0002000
+End of epoch 57 / 200 	 Time Taken: 11 sec
+11.021905183792114
+learning rate = 0.0002000
+End of epoch 58 / 200 	 Time Taken: 11 sec
+11.031770706176758
+learning rate = 0.0002000
+End of epoch 59 / 200 	 Time Taken: 10 sec
+10.98877239227295
+learning rate = 0.0002000
+End of epoch 60 / 200 	 Time Taken: 10 sec
+10.990651369094849
+learning rate = 0.0002000
+End of epoch 61 / 200 	 Time Taken: 11 sec
+11.02608609199524
+learning rate = 0.0002000
+End of epoch 62 / 200 	 Time Taken: 10 sec
+10.990925312042236
+learning rate = 0.0002000
+End of epoch 63 / 200 	 Time Taken: 11 sec
+11.01805067062378
+learning rate = 0.0002000
+End of epoch 64 / 200 	 Time Taken: 11 sec
+11.026360511779785
+learning rate = 0.0002000
+End of epoch 65 / 200 	 Time Taken: 11 sec
+11.039090871810913
+learning rate = 0.0002000
+End of epoch 66 / 200 	 Time Taken: 11 sec
+11.023689985275269
+learning rate = 0.0002000
+End of epoch 67 / 200 	 Time Taken: 11 sec
+11.05986738204956
+learning rate = 0.0002000
+End of epoch 68 / 200 	 Time Taken: 11 sec
+11.005109548568726
+learning rate = 0.0002000
+End of epoch 69 / 200 	 Time Taken: 11 sec
+11.030540704727173
+learning rate = 0.0002000
+End of epoch 70 / 200 	 Time Taken: 10 sec
+10.993382930755615
+learning rate = 0.0002000
+End of epoch 71 / 200 	 Time Taken: 10 sec
+10.991880416870117
+learning rate = 0.0002000
+End of epoch 72 / 200 	 Time Taken: 11 sec
+11.02964973449707
+learning rate = 0.0002000
+End of epoch 73 / 200 	 Time Taken: 11 sec
+11.048048973083496
+learning rate = 0.0002000
+End of epoch 74 / 200 	 Time Taken: 11 sec
+11.037752628326416
+learning rate = 0.0002000
+End of epoch 75 / 200 	 Time Taken: 11 sec
+11.014309167861938
+learning rate = 0.0002000
+End of epoch 76 / 200 	 Time Taken: 11 sec
+11.029893159866333
+learning rate = 0.0002000
+End of epoch 77 / 200 	 Time Taken: 11 sec
+11.00343632698059
+learning rate = 0.0002000
+End of epoch 78 / 200 	 Time Taken: 11 sec
+11.019484043121338
+learning rate = 0.0002000
+End of epoch 79 / 200 	 Time Taken: 11 sec
+11.021836996078491
+learning rate = 0.0002000
+End of epoch 80 / 200 	 Time Taken: 11 sec
+11.008160591125488
+learning rate = 0.0002000
+End of epoch 81 / 200 	 Time Taken: 11 sec
+11.042743682861328
+learning rate = 0.0002000
+End of epoch 82 / 200 	 Time Taken: 11 sec
+11.027087688446045
+learning rate = 0.0002000
+End of epoch 83 / 200 	 Time Taken: 11 sec
+11.01909065246582
+learning rate = 0.0002000
+End of epoch 84 / 200 	 Time Taken: 11 sec
+11.025814533233643
+learning rate = 0.0002000
+End of epoch 85 / 200 	 Time Taken: 10 sec
+10.990694761276245
+learning rate = 0.0002000
+End of epoch 86 / 200 	 Time Taken: 10 sec
+10.999937057495117
+learning rate = 0.0002000
+End of epoch 87 / 200 	 Time Taken: 11 sec
+11.051057577133179
+learning rate = 0.0002000
+End of epoch 88 / 200 	 Time Taken: 11 sec
+11.033458471298218
+learning rate = 0.0002000
+End of epoch 89 / 200 	 Time Taken: 11 sec
+11.020467042922974
+learning rate = 0.0002000
+End of epoch 90 / 200 	 Time Taken: 11 sec
+11.05211853981018
+learning rate = 0.0002000
+End of epoch 91 / 200 	 Time Taken: 11 sec
+11.019302368164062
+learning rate = 0.0002000
+End of epoch 92 / 200 	 Time Taken: 11 sec
+11.013521671295166
+learning rate = 0.0002000
+End of epoch 93 / 200 	 Time Taken: 11 sec
+11.005409479141235
+learning rate = 0.0002000
+End of epoch 94 / 200 	 Time Taken: 11 sec
+11.011007070541382
+learning rate = 0.0002000
+End of epoch 95 / 200 	 Time Taken: 11 sec
+11.003177165985107
+learning rate = 0.0002000
+End of epoch 96 / 200 	 Time Taken: 11 sec
+11.030791759490967
+learning rate = 0.0002000
+End of epoch 97 / 200 	 Time Taken: 11 sec
+11.007684230804443
+learning rate = 0.0002000
+End of epoch 98 / 200 	 Time Taken: 11 sec
+11.010276317596436
+learning rate = 0.0002000
+End of epoch 99 / 200 	 Time Taken: 10 sec
+10.992344856262207
+learning rate = 0.0002000
+End of epoch 100 / 200 	 Time Taken: 54 sec
+54.86278796195984
+learning rate = 0.0002000
+End of epoch 101 / 200 	 Time Taken: 10 sec
+10.977941036224365
+learning rate = 0.0002000
+End of epoch 102 / 200 	 Time Taken: 10 sec
+10.9617018699646
+learning rate = 0.0002000
+End of epoch 103 / 200 	 Time Taken: 10 sec
+10.95090937614441
+learning rate = 0.0002000
+End of epoch 104 / 200 	 Time Taken: 10 sec
+10.985191345214844
+learning rate = 0.0002000
+End of epoch 105 / 200 	 Time Taken: 11 sec
+11.001545190811157
+learning rate = 0.0002000
+End of epoch 106 / 200 	 Time Taken: 10 sec
+10.991920471191406
+learning rate = 0.0002000
+End of epoch 107 / 200 	 Time Taken: 10 sec
+10.998432397842407
+learning rate = 0.0002000
+End of epoch 108 / 200 	 Time Taken: 11 sec
+11.005834102630615
+learning rate = 0.0002000
+End of epoch 109 / 200 	 Time Taken: 10 sec
+10.983876943588257
+learning rate = 0.0002000
+End of epoch 110 / 200 	 Time Taken: 11 sec
+11.017814874649048
+learning rate = 0.0002000
+End of epoch 111 / 200 	 Time Taken: 11 sec
+11.010992527008057
+learning rate = 0.0002000
+End of epoch 112 / 200 	 Time Taken: 10 sec
+10.991290807723999
+learning rate = 0.0002000
+End of epoch 113 / 200 	 Time Taken: 11 sec
+11.00026535987854
+learning rate = 0.0002000
+End of epoch 114 / 200 	 Time Taken: 11 sec
+11.003155708312988
+learning rate = 0.0002000
+End of epoch 115 / 200 	 Time Taken: 11 sec
+11.004558801651001
+learning rate = 0.0002000
+End of epoch 116 / 200 	 Time Taken: 11 sec
+11.003844738006592
+learning rate = 0.0002000
+End of epoch 117 / 200 	 Time Taken: 11 sec
+11.023394584655762
+learning rate = 0.0002000
+End of epoch 118 / 200 	 Time Taken: 11 sec
+11.010746002197266
+learning rate = 0.0002000
+End of epoch 119 / 200 	 Time Taken: 11 sec
+11.011882781982422
+learning rate = 0.0002000
+End of epoch 120 / 200 	 Time Taken: 10 sec
+10.982735872268677
+learning rate = 0.0002000
+End of epoch 121 / 200 	 Time Taken: 10 sec
+10.976426601409912
+learning rate = 0.0002000
+End of epoch 122 / 200 	 Time Taken: 11 sec
+11.032808780670166
+learning rate = 0.0002000
+End of epoch 123 / 200 	 Time Taken: 11 sec
+11.027835369110107
+learning rate = 0.0002000
+End of epoch 124 / 200 	 Time Taken: 11 sec
+11.065354347229004
+learning rate = 0.0002000
+End of epoch 125 / 200 	 Time Taken: 11 sec
+11.018989324569702
+learning rate = 0.0002000
+End of epoch 126 / 200 	 Time Taken: 11 sec
+11.004164695739746
+learning rate = 0.0002000
+End of epoch 127 / 200 	 Time Taken: 11 sec
+11.041110515594482
+learning rate = 0.0002000
+End of epoch 128 / 200 	 Time Taken: 11 sec
+11.020668506622314
+learning rate = 0.0002000
+End of epoch 129 / 200 	 Time Taken: 10 sec
+10.99463176727295
+learning rate = 0.0002000
+End of epoch 130 / 200 	 Time Taken: 11 sec
+11.011211156845093
+learning rate = 0.0002000
+End of epoch 131 / 200 	 Time Taken: 11 sec
+11.000503540039062
+learning rate = 0.0002000
+End of epoch 132 / 200 	 Time Taken: 11 sec
+11.020771741867065
+learning rate = 0.0002000
+End of epoch 133 / 200 	 Time Taken: 11 sec
+11.042693376541138
+learning rate = 0.0002000
+End of epoch 134 / 200 	 Time Taken: 10 sec
+10.999558448791504
+learning rate = 0.0002000
+End of epoch 135 / 200 	 Time Taken: 11 sec
+11.011621713638306
+learning rate = 0.0002000
+End of epoch 136 / 200 	 Time Taken: 10 sec
+10.998240232467651
+learning rate = 0.0002000
+End of epoch 137 / 200 	 Time Taken: 11 sec
+11.006214141845703
+learning rate = 0.0002000
+End of epoch 138 / 200 	 Time Taken: 11 sec
+11.018222093582153
+learning rate = 0.0002000
+End of epoch 139 / 200 	 Time Taken: 11 sec
+11.043715715408325
+learning rate = 0.0002000
+End of epoch 140 / 200 	 Time Taken: 11 sec
+11.015240669250488
+learning rate = 0.0002000
+End of epoch 141 / 200 	 Time Taken: 10 sec
+10.995344877243042
+learning rate = 0.0002000
+End of epoch 142 / 200 	 Time Taken: 11 sec
+11.041912078857422
+learning rate = 0.0002000
+End of epoch 143 / 200 	 Time Taken: 10 sec
+10.999489784240723
+learning rate = 0.0002000
+End of epoch 144 / 200 	 Time Taken: 11 sec
+11.012956857681274
+learning rate = 0.0002000
+End of epoch 145 / 200 	 Time Taken: 11 sec
+11.021396398544312
+learning rate = 0.0002000
+End of epoch 146 / 200 	 Time Taken: 11 sec
+11.009410381317139
+learning rate = 0.0002000
+End of epoch 147 / 200 	 Time Taken: 11 sec
+11.014565229415894
+learning rate = 0.0002000
+End of epoch 148 / 200 	 Time Taken: 11 sec
+11.034962892532349
+learning rate = 0.0002000
+End of epoch 149 / 200 	 Time Taken: 11 sec
+11.035218715667725
+learning rate = 0.0002000
+End of epoch 150 / 200 	 Time Taken: 54 sec
+54.96733212471008
+learning rate = 0.0002000
+End of epoch 151 / 200 	 Time Taken: 10 sec
+10.956060647964478
+learning rate = 0.0001961
+End of epoch 152 / 200 	 Time Taken: 10 sec
+10.926881790161133
+learning rate = 0.0001922
+End of epoch 153 / 200 	 Time Taken: 10 sec
+10.955173254013062
+learning rate = 0.0001882
+End of epoch 154 / 200 	 Time Taken: 10 sec
+10.987165689468384
+learning rate = 0.0001843
+End of epoch 155 / 200 	 Time Taken: 10 sec
+10.993345022201538
+learning rate = 0.0001804
+End of epoch 156 / 200 	 Time Taken: 10 sec
+10.954347372055054
+learning rate = 0.0001765
+End of epoch 157 / 200 	 Time Taken: 11 sec
+11.046653985977173
+learning rate = 0.0001725
+End of epoch 158 / 200 	 Time Taken: 10 sec
+10.972465753555298
+learning rate = 0.0001686
+End of epoch 159 / 200 	 Time Taken: 10 sec
+10.977602243423462
+learning rate = 0.0001647
+End of epoch 160 / 200 	 Time Taken: 10 sec
+10.974235773086548
+learning rate = 0.0001608
+End of epoch 161 / 200 	 Time Taken: 11 sec
+11.012109279632568
+learning rate = 0.0001569
+End of epoch 162 / 200 	 Time Taken: 11 sec
+11.005550384521484
+learning rate = 0.0001529
+End of epoch 163 / 200 	 Time Taken: 11 sec
+11.026494979858398
+learning rate = 0.0001490
+End of epoch 164 / 200 	 Time Taken: 11 sec
+11.01844835281372
+learning rate = 0.0001451
+End of epoch 165 / 200 	 Time Taken: 10 sec
+10.993856430053711
+learning rate = 0.0001412
+End of epoch 166 / 200 	 Time Taken: 11 sec
+11.04572081565857
+learning rate = 0.0001373
+End of epoch 167 / 200 	 Time Taken: 11 sec
+11.006498336791992
+learning rate = 0.0001333
+End of epoch 168 / 200 	 Time Taken: 11 sec
+11.01434588432312
+learning rate = 0.0001294
+End of epoch 169 / 200 	 Time Taken: 10 sec
+10.99364686012268
+learning rate = 0.0001255
+End of epoch 170 / 200 	 Time Taken: 10 sec
+10.991666078567505
+learning rate = 0.0001216
+End of epoch 171 / 200 	 Time Taken: 11 sec
+11.016818046569824
+learning rate = 0.0001176
+End of epoch 172 / 200 	 Time Taken: 11 sec
+11.034702062606812
+learning rate = 0.0001137
+End of epoch 173 / 200 	 Time Taken: 11 sec
+11.024076223373413
+learning rate = 0.0001098
+End of epoch 174 / 200 	 Time Taken: 11 sec
+11.0103759765625
+learning rate = 0.0001059
+End of epoch 175 / 200 	 Time Taken: 11 sec
+11.007403135299683
+learning rate = 0.0001020
+End of epoch 176 / 200 	 Time Taken: 11 sec
+11.01883053779602
+learning rate = 0.0000980
+End of epoch 177 / 200 	 Time Taken: 10 sec
+10.9858078956604
+learning rate = 0.0000941
+End of epoch 178 / 200 	 Time Taken: 11 sec
+11.025742292404175
+learning rate = 0.0000902
+End of epoch 179 / 200 	 Time Taken: 10 sec
+10.993561029434204
+learning rate = 0.0000863
+End of epoch 180 / 200 	 Time Taken: 11 sec
+11.00626826286316
+learning rate = 0.0000824
+End of epoch 181 / 200 	 Time Taken: 10 sec
+10.99368166923523
+learning rate = 0.0000784
+End of epoch 182 / 200 	 Time Taken: 11 sec
+11.013871192932129
+learning rate = 0.0000745
+End of epoch 183 / 200 	 Time Taken: 11 sec
+11.013983726501465
+learning rate = 0.0000706
+End of epoch 184 / 200 	 Time Taken: 11 sec
+11.031200408935547
+learning rate = 0.0000667
+End of epoch 185 / 200 	 Time Taken: 11 sec
+11.009946346282959
+learning rate = 0.0000627
+End of epoch 186 / 200 	 Time Taken: 11 sec
+11.039133787155151
+learning rate = 0.0000588
+End of epoch 187 / 200 	 Time Taken: 11 sec
+11.006023406982422
+learning rate = 0.0000549
+End of epoch 188 / 200 	 Time Taken: 11 sec
+11.012202501296997
+learning rate = 0.0000510
+End of epoch 189 / 200 	 Time Taken: 11 sec
+11.019169807434082
+learning rate = 0.0000471
+End of epoch 190 / 200 	 Time Taken: 10 sec
+10.983878135681152
+learning rate = 0.0000431
+End of epoch 191 / 200 	 Time Taken: 10 sec
+10.990940809249878
+learning rate = 0.0000392
+End of epoch 192 / 200 	 Time Taken: 11 sec
+11.012177228927612
+learning rate = 0.0000353
+End of epoch 193 / 200 	 Time Taken: 11 sec
+11.0014488697052
+learning rate = 0.0000314
+End of epoch 194 / 200 	 Time Taken: 11 sec
+11.02427077293396
+learning rate = 0.0000275
+End of epoch 195 / 200 	 Time Taken: 10 sec
+10.987645626068115
+learning rate = 0.0000235
+End of epoch 196 / 200 	 Time Taken: 11 sec
+11.027209997177124
+learning rate = 0.0000196
+End of epoch 197 / 200 	 Time Taken: 11 sec
+11.00740671157837
+learning rate = 0.0000157
+End of epoch 198 / 200 	 Time Taken: 11 sec
+11.009556531906128
+learning rate = 0.0000118
+End of epoch 199 / 200 	 Time Taken: 10 sec
+10.980560541152954
+learning rate = 0.0000078
+End of epoch 200 / 200 	 Time Taken: 55 sec
+55.08292865753174
+learning rate = 0.0000039
+dataset [CnFewFusionDataset] was created
+dataset [CnFewFusionDataset] was created
+#training images = 775
+#training images = 972
+initialize network with xavier
+initialize network with xavier
+model [AGISNetModel] was created
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 52.438 M
+[Network D] Total number of parameters : 3.464 M
+-----------------------------------------------
+End of epoch 1 / 200 	 Time Taken: 10 sec
+10.985121488571167
+learning rate = 0.0002000
+End of epoch 2 / 200 	 Time Taken: 10 sec
+10.943493604660034
+learning rate = 0.0002000
+End of epoch 3 / 200 	 Time Taken: 10 sec
+10.941837787628174
+learning rate = 0.0002000
+End of epoch 4 / 200 	 Time Taken: 10 sec
+10.96577787399292
+learning rate = 0.0002000
+End of epoch 5 / 200 	 Time Taken: 10 sec
+10.998897314071655
+learning rate = 0.0002000
+End of epoch 6 / 200 	 Time Taken: 11 sec
+11.01513934135437
+learning rate = 0.0002000
+End of epoch 7 / 200 	 Time Taken: 11 sec
+11.000275373458862
+learning rate = 0.0002000
+End of epoch 8 / 200 	 Time Taken: 10 sec
+10.98835039138794
+learning rate = 0.0002000
+End of epoch 9 / 200 	 Time Taken: 10 sec
+10.99967360496521
+learning rate = 0.0002000
+End of epoch 10 / 200 	 Time Taken: 11 sec
+11.035096406936646
+learning rate = 0.0002000
+End of epoch 11 / 200 	 Time Taken: 11 sec
+11.00709342956543
+learning rate = 0.0002000
+End of epoch 12 / 200 	 Time Taken: 11 sec
+11.007785320281982
+learning rate = 0.0002000
+End of epoch 13 / 200 	 Time Taken: 11 sec
+11.006538152694702
+learning rate = 0.0002000
+End of epoch 14 / 200 	 Time Taken: 10 sec
+10.994232416152954
+learning rate = 0.0002000
+End of epoch 15 / 200 	 Time Taken: 10 sec
+10.971097469329834
+learning rate = 0.0002000
+End of epoch 16 / 200 	 Time Taken: 10 sec
+10.999327182769775
+learning rate = 0.0002000
+End of epoch 17 / 200 	 Time Taken: 11 sec
+11.00960636138916
+learning rate = 0.0002000
+End of epoch 18 / 200 	 Time Taken: 11 sec
+11.00755763053894
+learning rate = 0.0002000
+End of epoch 19 / 200 	 Time Taken: 11 sec
+11.028361082077026
+learning rate = 0.0002000
+End of epoch 20 / 200 	 Time Taken: 11 sec
+11.02095341682434
+learning rate = 0.0002000
+End of epoch 21 / 200 	 Time Taken: 10 sec
+10.988229036331177
+learning rate = 0.0002000
+End of epoch 22 / 200 	 Time Taken: 11 sec
+11.008218765258789
+learning rate = 0.0002000
+End of epoch 23 / 200 	 Time Taken: 10 sec
+10.98735237121582
+learning rate = 0.0002000
+End of epoch 24 / 200 	 Time Taken: 11 sec
+11.020061731338501
+learning rate = 0.0002000
+End of epoch 25 / 200 	 Time Taken: 11 sec
+11.037451267242432
+learning rate = 0.0002000
+End of epoch 26 / 200 	 Time Taken: 11 sec
+11.00895071029663
+learning rate = 0.0002000
+End of epoch 27 / 200 	 Time Taken: 10 sec
+10.995975255966187
+learning rate = 0.0002000
+End of epoch 28 / 200 	 Time Taken: 11 sec
+11.020097494125366
+learning rate = 0.0002000
+End of epoch 29 / 200 	 Time Taken: 10 sec
+10.988297700881958
+learning rate = 0.0002000
+End of epoch 30 / 200 	 Time Taken: 11 sec
+11.023466110229492
+learning rate = 0.0002000
+End of epoch 31 / 200 	 Time Taken: 11 sec
+11.010855197906494
+learning rate = 0.0002000
+End of epoch 32 / 200 	 Time Taken: 11 sec
+11.013232707977295
+learning rate = 0.0002000
+End of epoch 33 / 200 	 Time Taken: 11 sec
+11.028252363204956
+learning rate = 0.0002000
+End of epoch 34 / 200 	 Time Taken: 11 sec
+11.000221967697144
+learning rate = 0.0002000
+End of epoch 35 / 200 	 Time Taken: 11 sec
+11.006009578704834
+learning rate = 0.0002000
+End of epoch 36 / 200 	 Time Taken: 11 sec
+11.025547981262207
+learning rate = 0.0002000
+End of epoch 37 / 200 	 Time Taken: 10 sec
+10.979265928268433
+learning rate = 0.0002000
+End of epoch 38 / 200 	 Time Taken: 11 sec
+11.03595495223999
+learning rate = 0.0002000
+End of epoch 39 / 200 	 Time Taken: 10 sec
+10.997126340866089
+learning rate = 0.0002000
+End of epoch 40 / 200 	 Time Taken: 10 sec
+10.996043920516968
+learning rate = 0.0002000
+End of epoch 41 / 200 	 Time Taken: 10 sec
+10.998522281646729
+learning rate = 0.0002000
+End of epoch 42 / 200 	 Time Taken: 11 sec
+11.028233051300049
+learning rate = 0.0002000
+End of epoch 43 / 200 	 Time Taken: 10 sec
+10.984987497329712
+learning rate = 0.0002000
+End of epoch 44 / 200 	 Time Taken: 11 sec
+11.009798526763916
+learning rate = 0.0002000
+End of epoch 45 / 200 	 Time Taken: 11 sec
+11.015250444412231
+learning rate = 0.0002000
+End of epoch 46 / 200 	 Time Taken: 11 sec
+11.000300884246826
+learning rate = 0.0002000
+End of epoch 47 / 200 	 Time Taken: 10 sec
+10.988205909729004
+learning rate = 0.0002000
+End of epoch 48 / 200 	 Time Taken: 11 sec
+11.021283864974976
+learning rate = 0.0002000
+End of epoch 49 / 200 	 Time Taken: 11 sec
+11.020437240600586
+learning rate = 0.0002000
+End of epoch 50 / 200 	 Time Taken: 54 sec
+54.992695331573486
+learning rate = 0.0002000
+End of epoch 51 / 200 	 Time Taken: 10 sec
+10.984984874725342
+learning rate = 0.0002000
+End of epoch 52 / 200 	 Time Taken: 10 sec
+10.94709825515747
+learning rate = 0.0002000
+End of epoch 53 / 200 	 Time Taken: 10 sec
+10.950418949127197
+learning rate = 0.0002000
+End of epoch 54 / 200 	 Time Taken: 10 sec
+10.95375680923462
+learning rate = 0.0002000
+End of epoch 55 / 200 	 Time Taken: 11 sec
+11.005715131759644
+learning rate = 0.0002000
+End of epoch 56 / 200 	 Time Taken: 10 sec
+10.980415344238281
+learning rate = 0.0002000
+End of epoch 57 / 200 	 Time Taken: 10 sec
+10.975851774215698
+learning rate = 0.0002000
+End of epoch 58 / 200 	 Time Taken: 10 sec
+10.984994411468506
+learning rate = 0.0002000
+End of epoch 59 / 200 	 Time Taken: 11 sec
+11.006319284439087
+learning rate = 0.0002000
+End of epoch 60 / 200 	 Time Taken: 11 sec
+11.016829013824463
+learning rate = 0.0002000
+End of epoch 61 / 200 	 Time Taken: 10 sec
+10.982170581817627
+learning rate = 0.0002000
+End of epoch 62 / 200 	 Time Taken: 10 sec
+10.999691009521484
+learning rate = 0.0002000
+End of epoch 63 / 200 	 Time Taken: 11 sec
+11.001668930053711
+learning rate = 0.0002000
+End of epoch 64 / 200 	 Time Taken: 11 sec
+11.056136131286621
+learning rate = 0.0002000
+End of epoch 65 / 200 	 Time Taken: 11 sec
+11.045934677124023
+learning rate = 0.0002000
+End of epoch 66 / 200 	 Time Taken: 11 sec
+11.005352020263672
+learning rate = 0.0002000
+End of epoch 67 / 200 	 Time Taken: 11 sec
+11.019785165786743
+learning rate = 0.0002000
+End of epoch 68 / 200 	 Time Taken: 11 sec
+11.001791715621948
+learning rate = 0.0002000
+End of epoch 69 / 200 	 Time Taken: 10 sec
+10.994297981262207
+learning rate = 0.0002000
+End of epoch 70 / 200 	 Time Taken: 11 sec
+11.024790287017822
+learning rate = 0.0002000
+End of epoch 71 / 200 	 Time Taken: 10 sec
+10.981525182723999
+learning rate = 0.0002000
+End of epoch 72 / 200 	 Time Taken: 11 sec
+11.009679317474365
+learning rate = 0.0002000
+End of epoch 73 / 200 	 Time Taken: 11 sec
+11.00167965888977
+learning rate = 0.0002000
+End of epoch 74 / 200 	 Time Taken: 11 sec
+11.022802829742432
+learning rate = 0.0002000
+End of epoch 75 / 200 	 Time Taken: 11 sec
+11.023564100265503
+learning rate = 0.0002000
+End of epoch 76 / 200 	 Time Taken: 11 sec
+11.00612473487854
+learning rate = 0.0002000
+End of epoch 77 / 200 	 Time Taken: 10 sec
+10.989360809326172
+learning rate = 0.0002000
+End of epoch 78 / 200 	 Time Taken: 11 sec
+11.03663682937622
+learning rate = 0.0002000
+End of epoch 79 / 200 	 Time Taken: 10 sec
+10.994439363479614
+learning rate = 0.0002000
+End of epoch 80 / 200 	 Time Taken: 11 sec
+11.039951086044312
+learning rate = 0.0002000
+End of epoch 81 / 200 	 Time Taken: 10 sec
+10.975851774215698
+learning rate = 0.0002000
+End of epoch 82 / 200 	 Time Taken: 11 sec
+11.025587320327759
+learning rate = 0.0002000
+End of epoch 83 / 200 	 Time Taken: 10 sec
+10.996003866195679
+learning rate = 0.0002000
+End of epoch 84 / 200 	 Time Taken: 10 sec
+10.99460744857788
+learning rate = 0.0002000
+End of epoch 85 / 200 	 Time Taken: 10 sec
+10.988705396652222
+learning rate = 0.0002000
+End of epoch 86 / 200 	 Time Taken: 11 sec
+11.03329348564148
+learning rate = 0.0002000
+End of epoch 87 / 200 	 Time Taken: 10 sec
+10.995051622390747
+learning rate = 0.0002000
+End of epoch 88 / 200 	 Time Taken: 11 sec
+11.014581203460693
+learning rate = 0.0002000
+End of epoch 89 / 200 	 Time Taken: 11 sec
+11.021493196487427
+learning rate = 0.0002000
+End of epoch 90 / 200 	 Time Taken: 11 sec
+11.017405033111572
+learning rate = 0.0002000
+End of epoch 91 / 200 	 Time Taken: 11 sec
+11.001996278762817
+learning rate = 0.0002000
+End of epoch 92 / 200 	 Time Taken: 11 sec
+11.026138544082642
+learning rate = 0.0002000
+End of epoch 93 / 200 	 Time Taken: 11 sec
+11.02948808670044
+learning rate = 0.0002000
+End of epoch 94 / 200 	 Time Taken: 10 sec
+10.988443613052368
+learning rate = 0.0002000
+End of epoch 95 / 200 	 Time Taken: 11 sec
+11.019240856170654
+learning rate = 0.0002000
+End of epoch 96 / 200 	 Time Taken: 10 sec
+10.984677791595459
+learning rate = 0.0002000
+End of epoch 97 / 200 	 Time Taken: 10 sec
+10.992962837219238
+learning rate = 0.0002000
+End of epoch 98 / 200 	 Time Taken: 11 sec
+11.030979871749878
+learning rate = 0.0002000
+End of epoch 99 / 200 	 Time Taken: 11 sec
+11.01313591003418
+learning rate = 0.0002000
+End of epoch 100 / 200 	 Time Taken: 54 sec
+54.93494963645935
+learning rate = 0.0002000
+End of epoch 101 / 200 	 Time Taken: 10 sec
+10.966482162475586
+learning rate = 0.0002000
+End of epoch 102 / 200 	 Time Taken: 10 sec
+10.96657919883728
+learning rate = 0.0002000
+End of epoch 103 / 200 	 Time Taken: 10 sec
+10.942628622055054
+learning rate = 0.0002000
+End of epoch 104 / 200 	 Time Taken: 10 sec
+10.925141334533691
+learning rate = 0.0002000
+End of epoch 105 / 200 	 Time Taken: 10 sec
+10.948384523391724
+learning rate = 0.0002000
+End of epoch 106 / 200 	 Time Taken: 10 sec
+10.974055051803589
+learning rate = 0.0002000
+End of epoch 107 / 200 	 Time Taken: 11 sec
+11.01860237121582
+learning rate = 0.0002000
+End of epoch 108 / 200 	 Time Taken: 10 sec
+10.974421739578247
+learning rate = 0.0002000
+End of epoch 109 / 200 	 Time Taken: 10 sec
+10.967084169387817
+learning rate = 0.0002000
+End of epoch 110 / 200 	 Time Taken: 11 sec
+11.02082872390747
+learning rate = 0.0002000
+End of epoch 111 / 200 	 Time Taken: 11 sec
+11.005363702774048
+learning rate = 0.0002000
+End of epoch 112 / 200 	 Time Taken: 11 sec
+11.014055252075195
+learning rate = 0.0002000
+End of epoch 113 / 200 	 Time Taken: 10 sec
+10.98779845237732
+learning rate = 0.0002000
+End of epoch 114 / 200 	 Time Taken: 10 sec
+10.985445261001587
+learning rate = 0.0002000
+End of epoch 115 / 200 	 Time Taken: 11 sec
+11.003544092178345
+learning rate = 0.0002000
+End of epoch 116 / 200 	 Time Taken: 10 sec
+10.989880323410034
+learning rate = 0.0002000
+End of epoch 117 / 200 	 Time Taken: 11 sec
+11.019344091415405
+learning rate = 0.0002000
+End of epoch 118 / 200 	 Time Taken: 10 sec
+10.992203950881958
+learning rate = 0.0002000
+End of epoch 119 / 200 	 Time Taken: 11 sec
+11.042918682098389
+learning rate = 0.0002000
+End of epoch 120 / 200 	 Time Taken: 10 sec
+10.999706268310547
+learning rate = 0.0002000
+End of epoch 121 / 200 	 Time Taken: 11 sec
+11.042270421981812
+learning rate = 0.0002000
+End of epoch 122 / 200 	 Time Taken: 11 sec
+11.046746015548706
+learning rate = 0.0002000
+End of epoch 123 / 200 	 Time Taken: 10 sec
+10.967280626296997
+learning rate = 0.0002000
+End of epoch 124 / 200 	 Time Taken: 10 sec
+10.990852117538452
+learning rate = 0.0002000
+End of epoch 125 / 200 	 Time Taken: 11 sec
+11.01268720626831
+learning rate = 0.0002000
+End of epoch 126 / 200 	 Time Taken: 11 sec
+11.038946390151978
+learning rate = 0.0002000
+End of epoch 127 / 200 	 Time Taken: 10 sec
+10.967835903167725
+learning rate = 0.0002000
+End of epoch 128 / 200 	 Time Taken: 11 sec
+11.01718282699585
+learning rate = 0.0002000
+End of epoch 129 / 200 	 Time Taken: 11 sec
+11.006819009780884
+learning rate = 0.0002000
+End of epoch 130 / 200 	 Time Taken: 11 sec
+11.010970830917358
+learning rate = 0.0002000
+End of epoch 131 / 200 	 Time Taken: 10 sec
+10.985235452651978
+learning rate = 0.0002000
+End of epoch 132 / 200 	 Time Taken: 10 sec
+10.995791912078857
+learning rate = 0.0002000
+End of epoch 133 / 200 	 Time Taken: 11 sec
+11.01978087425232
+learning rate = 0.0002000
+End of epoch 134 / 200 	 Time Taken: 10 sec
+10.99744200706482
+learning rate = 0.0002000
+End of epoch 135 / 200 	 Time Taken: 11 sec
+11.010952949523926
+learning rate = 0.0002000
+End of epoch 136 / 200 	 Time Taken: 11 sec
+11.036144495010376
+learning rate = 0.0002000
+End of epoch 137 / 200 	 Time Taken: 10 sec
+10.992534637451172
+learning rate = 0.0002000
+End of epoch 138 / 200 	 Time Taken: 11 sec
+11.003277778625488
+learning rate = 0.0002000
+End of epoch 139 / 200 	 Time Taken: 11 sec
+11.007408857345581
+learning rate = 0.0002000
+End of epoch 140 / 200 	 Time Taken: 10 sec
+10.991986513137817
+learning rate = 0.0002000
+End of epoch 141 / 200 	 Time Taken: 11 sec
+11.00032639503479
+learning rate = 0.0002000
+End of epoch 142 / 200 	 Time Taken: 11 sec
+11.01859736442566
+learning rate = 0.0002000
+End of epoch 143 / 200 	 Time Taken: 10 sec
+10.980780124664307
+learning rate = 0.0002000
+End of epoch 144 / 200 	 Time Taken: 11 sec
+11.024054288864136
+learning rate = 0.0002000
+End of epoch 145 / 200 	 Time Taken: 11 sec
+11.036595582962036
+learning rate = 0.0002000
+End of epoch 146 / 200 	 Time Taken: 11 sec
+11.018558025360107
+learning rate = 0.0002000
+End of epoch 147 / 200 	 Time Taken: 11 sec
+11.019964456558228
+learning rate = 0.0002000
+End of epoch 148 / 200 	 Time Taken: 11 sec
+11.011834621429443
+learning rate = 0.0002000
+End of epoch 149 / 200 	 Time Taken: 10 sec
+10.993288040161133
+learning rate = 0.0002000
+End of epoch 150 / 200 	 Time Taken: 54 sec
+54.98221564292908
+learning rate = 0.0002000
+End of epoch 151 / 200 	 Time Taken: 10 sec
+10.995283842086792
+learning rate = 0.0001961
+End of epoch 152 / 200 	 Time Taken: 10 sec
+10.912687540054321
+learning rate = 0.0001922
+End of epoch 153 / 200 	 Time Taken: 10 sec
+10.929769277572632
+learning rate = 0.0001882
+End of epoch 154 / 200 	 Time Taken: 10 sec
+10.959011554718018
+learning rate = 0.0001843
+End of epoch 155 / 200 	 Time Taken: 10 sec
+10.944395542144775
+learning rate = 0.0001804
+End of epoch 156 / 200 	 Time Taken: 11 sec
+11.004616737365723
+learning rate = 0.0001765
+End of epoch 157 / 200 	 Time Taken: 10 sec
+10.991267204284668
+learning rate = 0.0001725
+End of epoch 158 / 200 	 Time Taken: 10 sec
+10.963495969772339
+learning rate = 0.0001686
+End of epoch 159 / 200 	 Time Taken: 11 sec
+11.002281427383423
+learning rate = 0.0001647
+End of epoch 160 / 200 	 Time Taken: 11 sec
+11.0092191696167
+learning rate = 0.0001608
+End of epoch 161 / 200 	 Time Taken: 11 sec
+11.017407655715942
+learning rate = 0.0001569
+End of epoch 162 / 200 	 Time Taken: 10 sec
+10.988717079162598
+learning rate = 0.0001529
+End of epoch 163 / 200 	 Time Taken: 11 sec
+11.010433912277222
+learning rate = 0.0001490
+End of epoch 164 / 200 	 Time Taken: 11 sec
+11.007434129714966
+learning rate = 0.0001451
+End of epoch 165 / 200 	 Time Taken: 11 sec
+11.011747121810913
+learning rate = 0.0001412
+End of epoch 166 / 200 	 Time Taken: 11 sec
+11.007556438446045
+learning rate = 0.0001373
+End of epoch 167 / 200 	 Time Taken: 10 sec
+10.982409954071045
+learning rate = 0.0001333
+End of epoch 168 / 200 	 Time Taken: 10 sec
+10.983185052871704
+learning rate = 0.0001294
+End of epoch 169 / 200 	 Time Taken: 11 sec
+11.027871370315552
+learning rate = 0.0001255
+End of epoch 170 / 200 	 Time Taken: 11 sec
+11.020355463027954
+learning rate = 0.0001216
+End of epoch 171 / 200 	 Time Taken: 11 sec
+11.003457069396973
+learning rate = 0.0001176
+End of epoch 172 / 200 	 Time Taken: 11 sec
+11.021129846572876
+learning rate = 0.0001137
+End of epoch 173 / 200 	 Time Taken: 11 sec
+11.034921884536743
+learning rate = 0.0001098
+End of epoch 174 / 200 	 Time Taken: 11 sec
+11.052416563034058
+learning rate = 0.0001059
+End of epoch 175 / 200 	 Time Taken: 10 sec
+10.965320348739624
+learning rate = 0.0001020
+End of epoch 176 / 200 	 Time Taken: 11 sec
+11.007631301879883
+learning rate = 0.0000980
+End of epoch 177 / 200 	 Time Taken: 10 sec
+10.968993425369263
+learning rate = 0.0000941
+End of epoch 178 / 200 	 Time Taken: 11 sec
+11.023219347000122
+learning rate = 0.0000902
+End of epoch 179 / 200 	 Time Taken: 11 sec
+11.011831998825073
+learning rate = 0.0000863
+End of epoch 180 / 200 	 Time Taken: 10 sec
+10.999037742614746
+learning rate = 0.0000824
+End of epoch 181 / 200 	 Time Taken: 10 sec
+10.994550228118896
+learning rate = 0.0000784
+End of epoch 182 / 200 	 Time Taken: 11 sec
+11.010828733444214
+learning rate = 0.0000745
+End of epoch 183 / 200 	 Time Taken: 10 sec
+10.98495888710022
+learning rate = 0.0000706
+End of epoch 184 / 200 	 Time Taken: 11 sec
+11.008381128311157
+learning rate = 0.0000667
+End of epoch 185 / 200 	 Time Taken: 11 sec
+11.015445709228516
+learning rate = 0.0000627
+End of epoch 186 / 200 	 Time Taken: 10 sec
+10.997876167297363
+learning rate = 0.0000588
+End of epoch 187 / 200 	 Time Taken: 10 sec
+10.977873086929321
+learning rate = 0.0000549
+End of epoch 188 / 200 	 Time Taken: 11 sec
+11.017564535140991
+learning rate = 0.0000510
+End of epoch 189 / 200 	 Time Taken: 11 sec
+11.000252723693848
+learning rate = 0.0000471
+End of epoch 190 / 200 	 Time Taken: 10 sec
+10.976269245147705
+learning rate = 0.0000431
+End of epoch 191 / 200 	 Time Taken: 11 sec
+11.013774394989014
+learning rate = 0.0000392
+End of epoch 192 / 200 	 Time Taken: 10 sec
+10.997020721435547
+learning rate = 0.0000353
+End of epoch 193 / 200 	 Time Taken: 10 sec
+10.99389386177063
+learning rate = 0.0000314
+End of epoch 194 / 200 	 Time Taken: 10 sec
+10.993430137634277
+learning rate = 0.0000275
+End of epoch 195 / 200 	 Time Taken: 11 sec
+11.007954835891724
+learning rate = 0.0000235
+End of epoch 196 / 200 	 Time Taken: 11 sec
+11.023903369903564
+learning rate = 0.0000196
+End of epoch 197 / 200 	 Time Taken: 10 sec
+10.980426788330078
+learning rate = 0.0000157
+End of epoch 198 / 200 	 Time Taken: 11 sec
+11.015703439712524
+learning rate = 0.0000118
+End of epoch 199 / 200 	 Time Taken: 11 sec
+11.0191969871521
+learning rate = 0.0000078
+End of epoch 200 / 200 	 Time Taken: 55 sec
+55.06423616409302
+learning rate = 0.0000039
+dataset [CnFewFusionDataset] was created
+dataset [CnFewFusionDataset] was created
+#training images = 775
+#training images = 972
+initialize network with xavier
+initialize network with xavier
+model [AGISNetModel] was created
+---------- Networks initialized -------------
+[Network G] Total number of parameters : 52.438 M
+[Network D] Total number of parameters : 3.464 M
+-----------------------------------------------
+End of epoch 1 / 200 	 Time Taken: 10 sec
+10.951887607574463
+learning rate = 0.0002000
+End of epoch 2 / 200 	 Time Taken: 10 sec
+10.939180612564087
+learning rate = 0.0002000
+End of epoch 3 / 200 	 Time Taken: 10 sec
+10.945700407028198
+learning rate = 0.0002000
+End of epoch 4 / 200 	 Time Taken: 10 sec
+10.964839220046997
+learning rate = 0.0002000
+End of epoch 5 / 200 	 Time Taken: 10 sec
+10.977299451828003
+learning rate = 0.0002000
+End of epoch 6 / 200 	 Time Taken: 10 sec
+10.977099657058716
+learning rate = 0.0002000
+End of epoch 7 / 200 	 Time Taken: 11 sec
+11.020665407180786
+learning rate = 0.0002000
+End of epoch 8 / 200 	 Time Taken: 10 sec
+10.973103046417236
+learning rate = 0.0002000
+End of epoch 9 / 200 	 Time Taken: 11 sec
+11.024128198623657
+learning rate = 0.0002000
+End of epoch 10 / 200 	 Time Taken: 10 sec
+10.992601871490479
+learning rate = 0.0002000
+End of epoch 11 / 200 	 Time Taken: 11 sec
+11.005680561065674
+learning rate = 0.0002000
+End of epoch 12 / 200 	 Time Taken: 10 sec
+10.989757061004639
+learning rate = 0.0002000
+End of epoch 13 / 200 	 Time Taken: 11 sec
+11.006715297698975
+learning rate = 0.0002000
+End of epoch 14 / 200 	 Time Taken: 11 sec
+11.022754430770874
+learning rate = 0.0002000
+End of epoch 15 / 200 	 Time Taken: 11 sec
+11.016661167144775
+learning rate = 0.0002000
+End of epoch 16 / 200 	 Time Taken: 11 sec
+11.032369136810303
+learning rate = 0.0002000
+End of epoch 17 / 200 	 Time Taken: 10 sec
+10.987516641616821
+learning rate = 0.0002000
+End of epoch 18 / 200 	 Time Taken: 11 sec
+11.013081312179565
+learning rate = 0.0002000
+End of epoch 19 / 200 	 Time Taken: 11 sec
+11.015399694442749
+learning rate = 0.0002000
+End of epoch 20 / 200 	 Time Taken: 11 sec
+11.025939702987671
+learning rate = 0.0002000
+End of epoch 21 / 200 	 Time Taken: 11 sec
+11.007275104522705
+learning rate = 0.0002000
+End of epoch 22 / 200 	 Time Taken: 11 sec
+11.037947416305542
+learning rate = 0.0002000
+End of epoch 23 / 200 	 Time Taken: 11 sec
+11.0015287399292
+learning rate = 0.0002000
+End of epoch 24 / 200 	 Time Taken: 11 sec
+11.007784366607666
+learning rate = 0.0002000
+End of epoch 25 / 200 	 Time Taken: 11 sec
+11.010999202728271
+learning rate = 0.0002000
+End of epoch 26 / 200 	 Time Taken: 11 sec
+11.012341737747192
+learning rate = 0.0002000
+End of epoch 27 / 200 	 Time Taken: 10 sec
+10.985537767410278
+learning rate = 0.0002000
+End of epoch 28 / 200 	 Time Taken: 10 sec
+10.987966775894165
+learning rate = 0.0002000
+End of epoch 29 / 200 	 Time Taken: 10 sec
+10.991080045700073
+learning rate = 0.0002000
+End of epoch 30 / 200 	 Time Taken: 11 sec
+11.020903825759888
+learning rate = 0.0002000
+End of epoch 31 / 200 	 Time Taken: 10 sec
+10.995591163635254
+learning rate = 0.0002000
+End of epoch 32 / 200 	 Time Taken: 11 sec
+11.041913270950317
+learning rate = 0.0002000
+End of epoch 33 / 200 	 Time Taken: 11 sec
+11.043867349624634
+learning rate = 0.0002000
+End of epoch 34 / 200 	 Time Taken: 11 sec
+11.012540578842163
+learning rate = 0.0002000
+End of epoch 35 / 200 	 Time Taken: 11 sec
+11.007934093475342
+learning rate = 0.0002000
+End of epoch 36 / 200 	 Time Taken: 11 sec
+11.032892942428589
+learning rate = 0.0002000
+End of epoch 37 / 200 	 Time Taken: 11 sec
+11.032564878463745
+learning rate = 0.0002000
+End of epoch 38 / 200 	 Time Taken: 11 sec
+11.02415132522583
+learning rate = 0.0002000
+End of epoch 39 / 200 	 Time Taken: 11 sec
+11.034358263015747
+learning rate = 0.0002000
+End of epoch 40 / 200 	 Time Taken: 11 sec
+11.050326108932495
+learning rate = 0.0002000
+End of epoch 41 / 200 	 Time Taken: 11 sec
+11.010801792144775
+learning rate = 0.0002000
+End of epoch 42 / 200 	 Time Taken: 11 sec
+11.024179458618164
+learning rate = 0.0002000
+End of epoch 43 / 200 	 Time Taken: 11 sec
+11.0267813205719
+learning rate = 0.0002000
+End of epoch 44 / 200 	 Time Taken: 10 sec
+10.994952201843262
+learning rate = 0.0002000
+End of epoch 45 / 200 	 Time Taken: 11 sec
+11.019170999526978
+learning rate = 0.0002000
+End of epoch 46 / 200 	 Time Taken: 11 sec
+11.013339757919312
+learning rate = 0.0002000
+End of epoch 47 / 200 	 Time Taken: 10 sec
+10.996415615081787
+learning rate = 0.0002000
+End of epoch 48 / 200 	 Time Taken: 11 sec
+11.025233745574951
+learning rate = 0.0002000
+End of epoch 49 / 200 	 Time Taken: 11 sec
+11.022107601165771
+learning rate = 0.0002000
+End of epoch 50 / 200 	 Time Taken: 55 sec
+55.128252267837524
+learning rate = 0.0002000
+End of epoch 51 / 200 	 Time Taken: 10 sec
+10.975646495819092
+learning rate = 0.0002000
+End of epoch 52 / 200 	 Time Taken: 10 sec
+10.944716691970825
+learning rate = 0.0002000
+End of epoch 53 / 200 	 Time Taken: 10 sec
+10.976635217666626
+learning rate = 0.0002000
+End of epoch 54 / 200 	 Time Taken: 10 sec
+10.963298559188843
+learning rate = 0.0002000
+End of epoch 55 / 200 	 Time Taken: 10 sec
+10.964893341064453
+learning rate = 0.0002000
+End of epoch 56 / 200 	 Time Taken: 10 sec
+10.978051662445068
+learning rate = 0.0002000
+End of epoch 57 / 200 	 Time Taken: 11 sec
+11.01186490058899
+learning rate = 0.0002000
+End of epoch 58 / 200 	 Time Taken: 11 sec
+11.015457153320312
+learning rate = 0.0002000
+End of epoch 59 / 200 	 Time Taken: 11 sec
+11.024825096130371
+learning rate = 0.0002000
+End of epoch 60 / 200 	 Time Taken: 11 sec
+11.005446672439575
+learning rate = 0.0002000
+End of epoch 61 / 200 	 Time Taken: 11 sec
+11.012176990509033
+learning rate = 0.0002000
+End of epoch 62 / 200 	 Time Taken: 11 sec
+11.007246494293213
+learning rate = 0.0002000
+End of epoch 63 / 200 	 Time Taken: 10 sec
+10.997585773468018
+learning rate = 0.0002000
+End of epoch 64 / 200 	 Time Taken: 10 sec
+10.99259877204895
+learning rate = 0.0002000
+End of epoch 65 / 200 	 Time Taken: 11 sec
+11.015316724777222
+learning rate = 0.0002000
+End of epoch 66 / 200 	 Time Taken: 11 sec
+11.040933847427368
+learning rate = 0.0002000
+End of epoch 67 / 200 	 Time Taken: 11 sec
+11.018190622329712
+learning rate = 0.0002000
+End of epoch 68 / 200 	 Time Taken: 11 sec
+11.009257555007935
+learning rate = 0.0002000
+End of epoch 69 / 200 	 Time Taken: 11 sec
+11.009162664413452
+learning rate = 0.0002000
+End of epoch 70 / 200 	 Time Taken: 11 sec
+11.031273365020752
+learning rate = 0.0002000
+End of epoch 71 / 200 	 Time Taken: 11 sec
+11.007978916168213
+learning rate = 0.0002000
+End of epoch 72 / 200 	 Time Taken: 11 sec
+11.04465103149414
+learning rate = 0.0002000
+End of epoch 73 / 200 	 Time Taken: 10 sec
+10.991843700408936
+learning rate = 0.0002000
+End of epoch 74 / 200 	 Time Taken: 10 sec
+10.998393774032593
+learning rate = 0.0002000
+End of epoch 75 / 200 	 Time Taken: 11 sec
+11.031962394714355
+learning rate = 0.0002000
+End of epoch 76 / 200 	 Time Taken: 11 sec
+11.071229219436646
+learning rate = 0.0002000
+End of epoch 77 / 200 	 Time Taken: 11 sec
+11.030266046524048
+learning rate = 0.0002000
+End of epoch 78 / 200 	 Time Taken: 11 sec
+11.032232284545898
+learning rate = 0.0002000
+End of epoch 79 / 200 	 Time Taken: 11 sec
+11.019459247589111
+learning rate = 0.0002000
+End of epoch 80 / 200 	 Time Taken: 11 sec
+11.031523942947388
+learning rate = 0.0002000
+End of epoch 81 / 200 	 Time Taken: 11 sec
+11.028877973556519
+learning rate = 0.0002000
+End of epoch 82 / 200 	 Time Taken: 11 sec
+11.013855218887329
+learning rate = 0.0002000
+End of epoch 83 / 200 	 Time Taken: 10 sec
+10.982146739959717
+learning rate = 0.0002000
+End of epoch 84 / 200 	 Time Taken: 11 sec
+11.01503610610962
+learning rate = 0.0002000
+End of epoch 85 / 200 	 Time Taken: 11 sec
+11.0093252658844
+learning rate = 0.0002000
+End of epoch 86 / 200 	 Time Taken: 10 sec
+10.994406938552856
+learning rate = 0.0002000
+End of epoch 87 / 200 	 Time Taken: 10 sec
+10.982428073883057
+learning rate = 0.0002000
+End of epoch 88 / 200 	 Time Taken: 11 sec
+11.030609130859375
+learning rate = 0.0002000
+End of epoch 89 / 200 	 Time Taken: 11 sec
+11.023455381393433
+learning rate = 0.0002000
+End of epoch 90 / 200 	 Time Taken: 11 sec
+11.028647899627686
+learning rate = 0.0002000
+End of epoch 91 / 200 	 Time Taken: 10 sec
+10.996271848678589
+learning rate = 0.0002000
+End of epoch 92 / 200 	 Time Taken: 11 sec
+11.008864641189575
+learning rate = 0.0002000
+End of epoch 93 / 200 	 Time Taken: 10 sec
+10.998907089233398
+learning rate = 0.0002000
+End of epoch 94 / 200 	 Time Taken: 11 sec
+11.030745506286621
+learning rate = 0.0002000
+End of epoch 95 / 200 	 Time Taken: 11 sec
+11.041382551193237
+learning rate = 0.0002000
+End of epoch 96 / 200 	 Time Taken: 11 sec
+11.006838321685791
+learning rate = 0.0002000
+End of epoch 97 / 200 	 Time Taken: 11 sec
+11.040846824645996
+learning rate = 0.0002000
+End of epoch 98 / 200 	 Time Taken: 11 sec
+11.031874895095825
+learning rate = 0.0002000
+End of epoch 99 / 200 	 Time Taken: 11 sec
+11.041582584381104
+learning rate = 0.0002000
+End of epoch 100 / 200 	 Time Taken: 54 sec
+54.96312642097473
+learning rate = 0.0002000
+End of epoch 101 / 200 	 Time Taken: 10 sec
+10.960040092468262
+learning rate = 0.0002000
+End of epoch 102 / 200 	 Time Taken: 10 sec
+10.9371919631958
+learning rate = 0.0002000
+End of epoch 103 / 200 	 Time Taken: 10 sec
+10.927152633666992
+learning rate = 0.0002000
+End of epoch 104 / 200 	 Time Taken: 10 sec
+10.964166641235352
+learning rate = 0.0002000
+End of epoch 105 / 200 	 Time Taken: 11 sec
+11.017140626907349
+learning rate = 0.0002000
+End of epoch 106 / 200 	 Time Taken: 11 sec
+11.018476724624634
+learning rate = 0.0002000
+End of epoch 107 / 200 	 Time Taken: 10 sec
+10.961572170257568
+learning rate = 0.0002000
+End of epoch 108 / 200 	 Time Taken: 11 sec
+11.027880907058716
+learning rate = 0.0002000
+End of epoch 109 / 200 	 Time Taken: 11 sec
+11.03200888633728
+learning rate = 0.0002000
+End of epoch 110 / 200 	 Time Taken: 10 sec
+10.995497465133667
+learning rate = 0.0002000
+End of epoch 111 / 200 	 Time Taken: 11 sec
+11.015302181243896
+learning rate = 0.0002000
+End of epoch 112 / 200 	 Time Taken: 11 sec
+11.024091482162476
+learning rate = 0.0002000
+End of epoch 113 / 200 	 Time Taken: 11 sec
+11.027078628540039
+learning rate = 0.0002000
+End of epoch 114 / 200 	 Time Taken: 11 sec
+11.012547016143799
+learning rate = 0.0002000
+End of epoch 115 / 200 	 Time Taken: 11 sec
+11.023810386657715
+learning rate = 0.0002000
+End of epoch 116 / 200 	 Time Taken: 11 sec
+11.00321078300476
+learning rate = 0.0002000
+End of epoch 117 / 200 	 Time Taken: 11 sec
+11.036344051361084
+learning rate = 0.0002000
+End of epoch 118 / 200 	 Time Taken: 10 sec
+10.989458560943604
+learning rate = 0.0002000
+End of epoch 119 / 200 	 Time Taken: 11 sec
+11.015331506729126
+learning rate = 0.0002000
+End of epoch 120 / 200 	 Time Taken: 10 sec
+10.99957537651062
+learning rate = 0.0002000
+End of epoch 121 / 200 	 Time Taken: 11 sec
+11.01019287109375
+learning rate = 0.0002000
+End of epoch 122 / 200 	 Time Taken: 11 sec
+11.03532338142395
+learning rate = 0.0002000
+End of epoch 123 / 200 	 Time Taken: 11 sec
+11.00757908821106
+learning rate = 0.0002000
+End of epoch 124 / 200 	 Time Taken: 11 sec
+11.006800413131714
+learning rate = 0.0002000
+End of epoch 125 / 200 	 Time Taken: 11 sec
+11.026204347610474
+learning rate = 0.0002000
+End of epoch 126 / 200 	 Time Taken: 11 sec
+11.006244659423828
+learning rate = 0.0002000
+End of epoch 127 / 200 	 Time Taken: 10 sec
+10.974814891815186
+learning rate = 0.0002000
+End of epoch 128 / 200 	 Time Taken: 10 sec
+10.992263317108154
+learning rate = 0.0002000
+End of epoch 129 / 200 	 Time Taken: 10 sec
+10.967561483383179
+learning rate = 0.0002000
+End of epoch 130 / 200 	 Time Taken: 11 sec
+11.009575605392456
+learning rate = 0.0002000
+End of epoch 131 / 200 	 Time Taken: 11 sec
+11.012303829193115
+learning rate = 0.0002000
+End of epoch 132 / 200 	 Time Taken: 11 sec
+11.005616188049316
+learning rate = 0.0002000
+End of epoch 133 / 200 	 Time Taken: 11 sec
+11.033689022064209
+learning rate = 0.0002000
+End of epoch 134 / 200 	 Time Taken: 11 sec
+11.032439947128296
+learning rate = 0.0002000
+End of epoch 135 / 200 	 Time Taken: 11 sec
+11.034022092819214
+learning rate = 0.0002000
+End of epoch 136 / 200 	 Time Taken: 10 sec
+10.997230768203735
+learning rate = 0.0002000
+End of epoch 137 / 200 	 Time Taken: 10 sec
+10.998270750045776
+learning rate = 0.0002000
+End of epoch 138 / 200 	 Time Taken: 11 sec
+11.048863172531128
+learning rate = 0.0002000
+End of epoch 139 / 200 	 Time Taken: 11 sec
+11.006198406219482
+learning rate = 0.0002000
+End of epoch 140 / 200 	 Time Taken: 10 sec
+10.952515363693237
+learning rate = 0.0002000
+End of epoch 141 / 200 	 Time Taken: 11 sec
+11.014979362487793
+learning rate = 0.0002000
+End of epoch 142 / 200 	 Time Taken: 11 sec
+11.034025430679321
+learning rate = 0.0002000
+End of epoch 143 / 200 	 Time Taken: 10 sec
+10.997191905975342
+learning rate = 0.0002000
+End of epoch 144 / 200 	 Time Taken: 11 sec
+11.059852361679077
+learning rate = 0.0002000
+End of epoch 145 / 200 	 Time Taken: 11 sec
+11.015340328216553
+learning rate = 0.0002000
+End of epoch 146 / 200 	 Time Taken: 11 sec
+11.021826982498169
+learning rate = 0.0002000
+End of epoch 147 / 200 	 Time Taken: 11 sec
+11.013365983963013
+learning rate = 0.0002000
+End of epoch 148 / 200 	 Time Taken: 11 sec
+11.023303031921387
+learning rate = 0.0002000
+End of epoch 149 / 200 	 Time Taken: 11 sec
+11.020846843719482
+learning rate = 0.0002000
+End of epoch 150 / 200 	 Time Taken: 55 sec
+55.05098247528076
+learning rate = 0.0002000
+End of epoch 151 / 200 	 Time Taken: 10 sec
+10.980190515518188
+learning rate = 0.0001961
+End of epoch 152 / 200 	 Time Taken: 10 sec
+10.948888301849365
+learning rate = 0.0001922
+End of epoch 153 / 200 	 Time Taken: 10 sec
+10.945016145706177
+learning rate = 0.0001882
+End of epoch 154 / 200 	 Time Taken: 10 sec
+10.94815444946289
+learning rate = 0.0001843
+End of epoch 155 / 200 	 Time Taken: 11 sec
+11.01105260848999
+learning rate = 0.0001804
+End of epoch 156 / 200 	 Time Taken: 10 sec
+10.962412357330322
+learning rate = 0.0001765
+End of epoch 157 / 200 	 Time Taken: 10 sec
+10.992008209228516
+learning rate = 0.0001725
+End of epoch 158 / 200 	 Time Taken: 11 sec
+11.00010085105896
+learning rate = 0.0001686
+End of epoch 159 / 200 	 Time Taken: 11 sec
+11.019334077835083
+learning rate = 0.0001647
+End of epoch 160 / 200 	 Time Taken: 11 sec
+11.034680843353271
+learning rate = 0.0001608
+End of epoch 161 / 200 	 Time Taken: 11 sec
+11.002741575241089
+learning rate = 0.0001569
+End of epoch 162 / 200 	 Time Taken: 10 sec
+10.994869232177734
+learning rate = 0.0001529
+End of epoch 163 / 200 	 Time Taken: 10 sec
+10.998104095458984
+learning rate = 0.0001490
+End of epoch 164 / 200 	 Time Taken: 11 sec
+11.018781185150146
+learning rate = 0.0001451
+End of epoch 165 / 200 	 Time Taken: 11 sec
+11.010081768035889
+learning rate = 0.0001412
+End of epoch 166 / 200 	 Time Taken: 11 sec
+11.000434875488281
+learning rate = 0.0001373
+End of epoch 167 / 200 	 Time Taken: 10 sec
+10.988436698913574
+learning rate = 0.0001333
+End of epoch 168 / 200 	 Time Taken: 11 sec
+11.005988121032715
+learning rate = 0.0001294
+End of epoch 169 / 200 	 Time Taken: 11 sec
+11.048505067825317
+learning rate = 0.0001255
+End of epoch 170 / 200 	 Time Taken: 11 sec
+11.034119844436646
+learning rate = 0.0001216
+End of epoch 171 / 200 	 Time Taken: 11 sec
+11.0398268699646
+learning rate = 0.0001176
+End of epoch 172 / 200 	 Time Taken: 11 sec
+11.042551279067993
+learning rate = 0.0001137
+End of epoch 173 / 200 	 Time Taken: 11 sec
+11.018981218338013
+learning rate = 0.0001098
+End of epoch 174 / 200 	 Time Taken: 11 sec
+11.003939628601074
+learning rate = 0.0001059
+End of epoch 175 / 200 	 Time Taken: 11 sec
+11.011788129806519
+learning rate = 0.0001020
+End of epoch 176 / 200 	 Time Taken: 11 sec
+11.029680728912354
+learning rate = 0.0000980
+End of epoch 177 / 200 	 Time Taken: 11 sec
+11.005344152450562
+learning rate = 0.0000941
+End of epoch 178 / 200 	 Time Taken: 11 sec
+11.027674674987793
+learning rate = 0.0000902
+End of epoch 179 / 200 	 Time Taken: 11 sec
+11.010331153869629
+learning rate = 0.0000863
+End of epoch 180 / 200 	 Time Taken: 11 sec
+11.00240683555603
+learning rate = 0.0000824
+End of epoch 181 / 200 	 Time Taken: 10 sec
+10.996992111206055
+learning rate = 0.0000784
+End of epoch 182 / 200 	 Time Taken: 11 sec
+11.01881217956543
+learning rate = 0.0000745
+End of epoch 183 / 200 	 Time Taken: 11 sec
+11.008540868759155
+learning rate = 0.0000706
+End of epoch 184 / 200 	 Time Taken: 11 sec
+11.01414179801941
+learning rate = 0.0000667
+End of epoch 185 / 200 	 Time Taken: 10 sec
+10.991515874862671
+learning rate = 0.0000627
+End of epoch 186 / 200 	 Time Taken: 10 sec
+10.991907358169556
+learning rate = 0.0000588
+End of epoch 187 / 200 	 Time Taken: 10 sec
+10.988567590713501
+learning rate = 0.0000549
+End of epoch 188 / 200 	 Time Taken: 11 sec
+11.021574974060059
+learning rate = 0.0000510
+End of epoch 189 / 200 	 Time Taken: 10 sec
+10.98050594329834
+learning rate = 0.0000471
+End of epoch 190 / 200 	 Time Taken: 11 sec
+11.009325742721558
+learning rate = 0.0000431
+End of epoch 191 / 200 	 Time Taken: 11 sec
+11.014301776885986
+learning rate = 0.0000392
+End of epoch 192 / 200 	 Time Taken: 11 sec
+11.013243675231934
+learning rate = 0.0000353
+End of epoch 193 / 200 	 Time Taken: 11 sec
+11.003838777542114
+learning rate = 0.0000314
+End of epoch 194 / 200 	 Time Taken: 11 sec
+11.020705461502075
+learning rate = 0.0000275
+End of epoch 195 / 200 	 Time Taken: 11 sec
+11.006665706634521
+learning rate = 0.0000235
+End of epoch 196 / 200 	 Time Taken: 11 sec
+11.006794214248657
+learning rate = 0.0000196
+End of epoch 197 / 200 	 Time Taken: 11 sec
+11.013319969177246
+learning rate = 0.0000157
+End of epoch 198 / 200 	 Time Taken: 11 sec
+11.066077709197998
+learning rate = 0.0000118
+End of epoch 199 / 200 	 Time Taken: 11 sec
+11.034698486328125
+learning rate = 0.0000078
+End of epoch 200 / 200 	 Time Taken: 55 sec
+55.0647656917572
+learning rate = 0.0000039
